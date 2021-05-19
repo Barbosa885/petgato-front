@@ -1,3 +1,12 @@
+## PetGatô - Grupo 6 2021/01
+
+**Desenvolvedores:**<br>
+Gustavo Barbosa<br>
+Nathalia Oliveira<br>
+Marco Antonio<br>
+
+**Gerente:** Victor Manuel<br>
+
 ## Tipos
 `feat`: funcionalidade<br>
 `fix`: correção<br>
