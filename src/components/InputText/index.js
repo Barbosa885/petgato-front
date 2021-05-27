@@ -3,10 +3,10 @@ import './styles.css';
 
 const InputText = ({children}) => {
     return (
-        <>
-            <p className='tituloInput'>{children}</p>
+        <label className='customizar'>
             <input className='TextInput' type='text' />
-        </>
+            <span className='tituloInput'>{children}</span>
+        </label>
     );
 }
 
