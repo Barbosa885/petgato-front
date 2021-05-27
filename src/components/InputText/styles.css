@@ -1,0 +1,14 @@
+.tituloInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0%;
+    color: #444143;
+    font-family: 'MontSerrat', sans-serif;
+}
+
+.TextInput{
+    border-radius: 5px;
+    border:thin;
+    margin: 10px 0px 10px;
+}

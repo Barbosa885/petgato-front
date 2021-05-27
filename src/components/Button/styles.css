@@ -1,0 +1,48 @@
+.btn{
+   background-color: #C882B4;
+   color: #444143;
+   padding: .5em 1em;
+   border: none;
+   border-radius: 5px;
+   outline: none;
+   position: relative;
+   cursor: pointer;
+   font-weight: 700;
+   font-family: 'MontSerrat', sans-serif;
+
+   --accent-color: #C882B4;
+   --color: #BA66A3;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--color);
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left ;
+}
+
+.btn:hover::before,
+.btn:focus::before{
+    transform: scaleX(1);
+}
+
+.btn{
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+    
+}
+
+.btn:hover,
+.btn:focus{
+    color:#FFFFFF;
+}
+
