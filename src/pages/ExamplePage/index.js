@@ -1,15 +1,16 @@
 import React from 'react';
-import ExampleButton from '../../components/ExampleButton';
-
-import './styles.css';
+import Navbar from '../../components/Navbar'; 
+import ExampleButton from '../../components/ExampleButton'; 
+import { Example } from './styles'
 
 const ExamplePage = () => {
     return (
-        <div className='example'>
-            <ExampleButton>
-                EXEMPLO
+        <Example>
+            <ExampleButton>    
+                Valorant
             </ExampleButton>
-        </div>
+        </Example>
+            
     );
 }
 
