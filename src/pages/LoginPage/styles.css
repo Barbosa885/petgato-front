@@ -1,0 +1,16 @@
+.divlogin{
+    background-color: #FBE9F6;
+    font-family: 'MontSerrat', sans-serif;
+    display: flex;
+    font-size: 12px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
