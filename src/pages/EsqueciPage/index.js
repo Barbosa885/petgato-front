@@ -21,11 +21,11 @@ const EsqueciPage = () => {
                     <ButtonMain>RECUPERAR SENHA</ButtonMain>
                     <Styled.LadoaLado>
                         <p>Lembrou a senha?</p>
-                        <a href='/esqueciSenha' >Esqueci minha senha</a>
+                        <a href='/login' >Faça Login</a>
                     </Styled.LadoaLado>
                     <Styled.LadoaLado>
                         <p> Ainda não tem conta?</p>
-                        <a href='/login' > Crie sua conta </a>
+                        <a href='/cadastro' > Crie sua conta </a>
                     </Styled.LadoaLado>
                 </Styled.FormCadastro>
                 
