@@ -1,10 +1,13 @@
 import React from 'react'
-
+import { Titulo } from './styles'
+import { Background } from './styles'
 function SignIn() {
     return (
-        <div>
-            Login
-        </div>
+        <Background>
+            <Titulo>
+                Login
+            </Titulo>
+        </Background>
     )
 }
 

@@ -6,8 +6,10 @@ height: 80vh;
 `
 export const Titulo = styled.section`
 display: flex;
+justify-content: center;
 align-items: center;
-color: Black;
+height: 70vh;
+color: black;
 font-size: 50px;
 font-family: 'Montserrat', sans-serif;
 `;

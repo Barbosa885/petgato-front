@@ -10,6 +10,5 @@ width: 100%;
 color: #FBE9F6;
 text-align: center;
 font-family: 'Montserrat', sans-serif;
-
-
 `;
+
