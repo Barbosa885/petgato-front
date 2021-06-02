@@ -1,4 +1,9 @@
-body {
+
+/* Esse código comentado serviu apenas para montar o Input, 
+    não serve mais para nada, porém fica ai comentado para possíveis
+    alterações
+*/
+/* body {
     width: 100vw;
     height: 100vw;
     display: flex;
@@ -7,7 +12,7 @@ body {
     align-items: center;
     font-family: 'MontSerrat', sans-serif;
     font-size: 16px;
-}
+} */
 
 *,*::before, *::after{
     box-sizing: border-box;
@@ -46,6 +51,7 @@ body {
         color 0.3s ease;
 }
 
+.customizar input:valid + .tituloInput,
 .customizar input:focus + .tituloInput{
     top: 20px;
     font-size: 10px;
@@ -53,10 +59,13 @@ body {
     background: #FBE9F6;
 }
 
+.customizar input:valid + .tituloInput,
 .customizar input:focus + .tituloInput{
     padding: 0 5px;
+    left: 8px;
 }
 
+.customizar input:valid, 
 .customizar input:focus{
     border-color: #BA66A3;
     transition-delay: 0.1s;
