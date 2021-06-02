@@ -1,14 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import LogoPetGato from '../../assets/gatinho_petgato_branco.svg';
-import { Logo } from './styles'
+import { Background, Logo } from './styles'
 
 
-function index() {
+export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const handleToggle = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
-        <Logo>
-            <img src={LogoPetGato}/>
-        </Logo>
+        <Background>
+            <a href='/' onClick={handleToggle}>
+                <Logo src={LogoPetGato}/>
+            </a>
+            <ul>
+                <li><a href='/'>Página inicial</a></li>
+                <li><a href='/AboutUs'>Sobre nós</a></li>
+                <li><a href='/ContactUs'>Fale conosco</a></li>
+                <li><a href='/SignIn'>Entrar</a></li>
+            </ul>
+        </Background>
+
     )
 }
-
-export default index;
