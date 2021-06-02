@@ -16,9 +16,9 @@ export default function Navbar() {
                 <Logo src={LogoPetGato}/>
             </a>
             <ul>
-                <li><a href='/'>Página inicial</a></li>
-                <li><a href='/AboutUs'>Sobre nós</a></li>
-                <li><a href='/ContactUs'>Fale conosco</a></li>
+                <li><a href='/'>Página Inicial</a></li>
+                <li><a href='/AboutUs'>Sobre Nós</a></li>
+                <li><a href='/ContactUs'>Fale Conosco</a></li>
                 <li><a href='/SignIn'>Entrar</a></li>
             </ul>
         </Background>
