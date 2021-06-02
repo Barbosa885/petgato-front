@@ -9,14 +9,21 @@ import Home from '../pages/Home';
 import AboutUs from '../pages/AboutUs';
 import ContactUs from '../pages/ContactUs';
 import SignIn from '../pages/SignIn';
+import ExamplePage from '../pages/ExamplePage';
+import LoginPage from '../pages/LoginPage';
+import CadastroPage from '../pages/CadastroPage';
+import EsqueciPage from '../pages/EsqueciPage';
 
 
 const Routes = () => {
     return (
         <Router>
-            <Navbar />
             <Switch>
-                <Route component={Home} path="/" exact>
+                <Route exact path='/' component={() => <LoginPage />} />
+                <Route exact path='/cadastro' component={() => <CadastroPage />} />
+                <Route exact path='/esqueciSenha' component={() => <EsqueciPage />} />
+
+                <Route path="/" exact component={Home}>
                     <Home />
                     <Footer />
                 </Route>
