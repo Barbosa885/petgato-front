@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Background } from './styles'
+import { Titulo } from './styles'
 
 function AboutUs() {
     return (
-        <div>
-            Sobre Nós
-        </div>
+        <Background>
+            <Titulo>
+                Sobre Nós
+            </Titulo>
+        </Background>
+        
+
+            
+        
     )
 }
 

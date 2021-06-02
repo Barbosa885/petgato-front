@@ -1,10 +1,14 @@
 import React from 'react'
+import {Background} from './styles'
+import {Titulo} from './styles'
 
 function index() {
     return (
-        <div>
-            Home
-        </div>
+        <Background>
+            <Titulo>
+               Home 
+            </Titulo>
+        </Background>
     )
 }
 

@@ -1,10 +1,14 @@
 import React from 'react'
+import { Background } from './styles'
+import { Titulo } from './styles'
 
 function ContactUs() {
     return (
-        <div>
-            ContactUs
-        </div>
+        <Background>
+            
+            <Titulo>ContactUs</Titulo>
+            
+        </Background>
     )
 }
 
