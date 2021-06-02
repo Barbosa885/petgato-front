@@ -1,10 +1,11 @@
 .btn{
    background-color: #C882B4;
    color: #444143;
-   padding: .75em 1.25em;
+   padding: 1.75% 2.25%;
    margin-top: 20px;
+   margin-bottom: 20px;
    border: none;
-   border-radius: 5px;
+   border-radius: 5%;
    outline: none;
    position: relative;
    cursor: pointer;
@@ -19,7 +20,7 @@
 .btn::before {
     content: '';
     position: absolute;
-    border-radius: 5px;
+    border-radius: 5%;
     top: 0;
     left: 0;
     bottom: 0;
