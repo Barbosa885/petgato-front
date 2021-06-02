@@ -1,5 +1,10 @@
 import React from 'react';
-import { CintiaLorenzzo, Floquinho, Mandrágora } from './CintiaLorenzzo.jpg';
+import Cintia from './Cintia.jpg';
+import Floquinho from './Floquinho.jpg';
+import Mandragora from './Mandragora.jpg';
+import Facebook from './Facebook.svg'
+import Instagram from './Instagram.svg'
+import Twitter from './Twitter.svg'
 
 import * as Styled from './styles'
 
