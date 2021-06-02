@@ -1,36 +1,36 @@
 import React from 'react';
 import ButtonMain from '../../components/Button';
 import InputText from '../../components/InputText';
-import './styles.css';
-import ImagemLogin from '../../assets/Login.jpg';
-import {ReactComponent as Logo} from '../../assets/gatinho_petgato.svg';
+import ImageLogin from '../../assets/Login.jpg';
+import ImgLogo from '../../assets/gatinho_petgato.svg';
+import * as Styled from './styles';
 
 
-const CadastroPage = () => {
+const LoginPage = () => {
     return (
-        <div className='divlogin'>
-            <div className='imagemLogin'> 
-                <img src={ImagemLogin}/>
-            </div>
-            <div className='cadastro'>
+        <Styled.DivLogin>
+            <Styled.ImagemLogin> 
+                <img src={ImageLogin}/>
+            </Styled.ImagemLogin>
+            <Styled.Cadastro>
                 
-                <form className='cadastro'>
-                    <Logo className='arrumando'/>
+                <Styled.FormCadastro>
+                    <Styled.Logo src={ImgLogo} />
                     <InputText>Email</InputText>
                     <InputText>Senha</InputText>
                     <ButtonMain>ENTRAR</ButtonMain>
-                    <div className='ladoalado'>
-                        <a className='melhorando'>Esqueci minha senha</a>
-                    </div>
-                    <div className='ladoalado'>
+                    <Styled.LadoaLado>
+                        <a href='/esqueciSenha' >Esqueci minha senha</a>
+                    </Styled.LadoaLado>
+                    <Styled.LadoaLado>
                         <p> Ainda não tem conta?</p>
-                        <a className='melhorando'> Crie sua conta </a>
-                    </div>
-                </form>
+                        <a href='/cadastro' > Crie sua conta </a>
+                    </Styled.LadoaLado>
+                </Styled.FormCadastro>
                 
-            </div>
-        </div>
+            </Styled.Cadastro>
+        </Styled.DivLogin>
     );
 }
 
-export default CadastroPage;
+export default LoginPage;

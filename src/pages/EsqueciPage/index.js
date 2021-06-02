@@ -1,36 +1,36 @@
 import React from 'react';
 import ButtonMain from '../../components/Button';
 import InputText from '../../components/InputText';
-import './styles.css';
-import Esqueci from '../../assets/Esqueci minha senha.jpg';
-import {ReactComponent as Logo} from '../../assets/gatinho_petgato.svg';
+import ImageLogin from '../../assets/Esqueci minha senha.jpg';
+import ImgLogo from '../../assets/gatinho_petgato.svg';
+import * as Styled from './styles'
 
 
 const EsqueciPage = () => {
     return (
-        <div className='divlogin'>
-            <div className='imagemLogin'> 
-                <img src={Esqueci}/>
-            </div>
-            <div className='cadastro'>
+        <Styled.DivLogin>
+            <Styled.ImagemLogin> 
+                <img src={ImageLogin}/>
+            </Styled.ImagemLogin>
+            <Styled.Cadastro>
                 
-                <form className='cadastro'>
-                    <Logo className='arrumando'/>
+                <Styled.FormCadastro>
+                    <Styled.Logo src={ImgLogo} />
                     <InputText>Email</InputText>
                     <p> insira seu email para recuperar senha</p>
                     <ButtonMain>RECUPERAR SENHA</ButtonMain>
-                    <div className='ladoalado'>
+                    <Styled.LadoaLado>
                         <p>Lembrou a senha?</p>
-                        <a className='melhorando'>Faça Login</a>
-                    </div>
-                    <div className='ladoalado'>
+                        <a href='/esqueciSenha' >Esqueci minha senha</a>
+                    </Styled.LadoaLado>
+                    <Styled.LadoaLado>
                         <p> Ainda não tem conta?</p>
-                        <a className='melhorando'> Cadastre-se aqui </a>
-                    </div>
-                </form>
+                        <a href='/login' > Crie sua conta </a>
+                    </Styled.LadoaLado>
+                </Styled.FormCadastro>
                 
-            </div>
-        </div>
+            </Styled.Cadastro>
+        </Styled.DivLogin>
     );
 }
 
