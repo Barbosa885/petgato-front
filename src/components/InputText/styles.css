@@ -36,7 +36,6 @@
     outline: none;
     font-size: 14px;
     transition: border-color 0.3 ease;
-
 }
 
 .customizar .tituloInput{
@@ -53,7 +52,7 @@
 
 .customizar input:valid + .tituloInput,
 .customizar input:focus + .tituloInput{
-    top: 20px;
+    top: 33%;
     font-size: 10px;
     color: #BA66A3;
     background: #FBE9F6;
