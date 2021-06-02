@@ -8,22 +8,32 @@ export const AboutUs = styled.form`
   height: 100vh;
 `
 
+export const Text = styled.div`
+  margin-left: 3rem;
+  width: 55%;
+  height: 60%;
+`
+
+export const ImageGrid = styled.div`
+  width: 30%;
+  height: 60%;
+`
+
 export const ImageContainer = styled.div`
-  
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 `
 
 export const ImageTop = styled.img`
-  width: 22%;
+  width: 100%;
   height: 65%;
+  margin-bottom: 1rem;
 `
 
 export const ImageBottom = styled.img`
-  width: 22%;
-  height: 65%;
-`
-
-export const Text = styled.div`
-  
+  width: 48%;
+  height: 70%;
 `
 
 export const Title = styled.span`
@@ -37,13 +47,14 @@ export const Subtitle = styled.h1`
 `
 
 export const Paragraph = styled.p`
-  
+  font-family: 'Montserrat',sans-serif;
 `
 
 export const SocialMedia = styled.div`
-  margin-left: 90%;
+  display: flex;
+  flex-direction: row;
 `
 
-export const Icon = styled.div`
-  margin-left: 90%;
+export const Icon = styled.img`
+  margin-right: 1rem;
 `
