@@ -5,7 +5,6 @@ import './styles.css';
 import ImagemLogin from '../../assets/Login.jpg';
 import {ReactComponent as Logo} from '../../assets/gatinho_petgato.svg';
 
-
 const CadastroPage = () => {
     return (
         <div className='divlogin'>

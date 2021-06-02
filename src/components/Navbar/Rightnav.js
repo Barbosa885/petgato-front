@@ -27,9 +27,9 @@ function Rightnav({ open }) {
     return (
     <Ul  open={open}>
         <li><a href='/'>Página Inicial</a></li>
-        <li><a href='/AboutUs'>Sobre Nós</a></li>
-        <li><a href='/ContactUs'>Fale Conosco</a></li>
-        <li><a href='/SignIn'>Entrar</a></li>
+        <li><a href='/sobre'>Sobre Nós</a></li>
+        <li><a href='/contato'>Fale Conosco</a></li>
+        <li><a href='/login'>Entrar</a></li>
     </Ul>
     )
 }
