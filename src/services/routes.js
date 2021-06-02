@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import ExamplePage from '../pages/ExamplePage';
+import Contact from '../pages/Contact';
 
 const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path='/' component={() => <ExamplePage />} />
+                <Route path='/contact' component={() => <Contact />} />
             </Switch>
         </BrowserRouter>
     );
