@@ -7,6 +7,7 @@ export const Contact = styled.form`
   align-items: center;
   height: 100vh;
 `
+
 export const Image = styled.img`
   width: 22%;
   height: 65%;
