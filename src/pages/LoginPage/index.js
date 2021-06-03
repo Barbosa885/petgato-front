@@ -6,7 +6,7 @@ import ImgLogo from '../../assets/gatinho_petgato.svg';
 import * as Styled from './styles'
 
 
-const CadastroPage = () => {
+const LoginPage = () => {
     return (
         <Styled.DivLogin>
             <Styled.ImagemLogin> 
@@ -15,14 +15,16 @@ const CadastroPage = () => {
             <Styled.Cadastro>
                 
                 <Styled.FormCadastro>
-                    <Styled.Logo src={ImgLogo} />
+                    <a href='/'>
+                        <Styled.Logo src={ImgLogo} />
+                    </a>
                     <InputText>Nome</InputText>
                     <InputText>Email</InputText>
                     <InputText>Senha</InputText>
                     <InputText>Confirme sua senha</InputText>
                     <ButtonMain>CADASTRAR</ButtonMain>
                     <Styled.LadoaLado>
-                            <p> Já possui conta?</p>
+                            <p> Já possui conta? </p>
                             <a href='/login' > Faça Login </a>
                     </Styled.LadoaLado>
                 </Styled.FormCadastro>
@@ -32,4 +34,4 @@ const CadastroPage = () => {
     );
 }
 
-export default CadastroPage;
+export default LoginPage;

@@ -4,9 +4,10 @@ import InputText from '../../components/InputText';
 import ImageLogin from '../../assets/Login.jpg';
 import ImgLogo from '../../assets/gatinho_petgato.svg';
 import * as Styled from './styles';
+import LoginPage from '../LoginPage'
 
 
-const LoginPage = () => {
+const CadastroPage = () => {
     return (
         <Styled.DivLogin>
             <Styled.ImagemLogin> 
@@ -15,7 +16,9 @@ const LoginPage = () => {
             <Styled.Cadastro>
                 
                 <Styled.FormCadastro>
-                    <Styled.Logo src={ImgLogo} />
+                    <a href='/'>
+                        <Styled.Logo src={ImgLogo} />
+                    </a>
                     <InputText>Email</InputText>
                     <InputText>Senha</InputText>
                     <ButtonMain>ENTRAR</ButtonMain>
@@ -23,7 +26,7 @@ const LoginPage = () => {
                         <a href='/esqueciSenha' >Esqueci minha senha</a>
                     </Styled.LadoaLado>
                     <Styled.LadoaLado>
-                        <p> Ainda não tem conta?</p>
+                        <p> Ainda não tem conta? </p>
                         <a href='/cadastro' > Crie sua conta </a>
                     </Styled.LadoaLado>
                 </Styled.FormCadastro>
@@ -33,4 +36,4 @@ const LoginPage = () => {
     );
 }
 
-export default LoginPage;
+export default CadastroPage;
