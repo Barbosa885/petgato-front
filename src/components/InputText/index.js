@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import * as Styled from './styles.js'
 
 const InputText = ({children}) => {
     // Logica para arrumar o Input text com JS puro, mas 
@@ -18,10 +18,10 @@ const InputText = ({children}) => {
     // });
 
     return (
-        <label className='customizar'>
-            <input className='TextInput' type='text' required />
-            <span className='tituloInput'>{children}</span>
-        </label>
+        <Styled.InputdeTexto>
+            <input  type='text' required />
+            <span>{children}</span>
+        </Styled.InputdeTexto>
     );
 }
 

@@ -1,11 +1,12 @@
 import React from 'react';
-import './styles.css';
+// import './styles.css';
+import * as Styled from './sytles.js';
 
 const ButtonMain = ({children}) => {
     return (
-        <button class="btn">
+        <Styled.ButtonPrin>
             {children}
-        </button>
+        </Styled.ButtonPrin>
     );
 }
 
