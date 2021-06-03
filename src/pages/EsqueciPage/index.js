@@ -24,7 +24,7 @@ const EsqueciPage = () => {
                         <a href='/login' >Faça Login</a>
                     </Styled.LadoaLado>
                     <Styled.LadoaLado>
-                        <p> Ainda não tem conta?</p>
+                        <p> Ainda não tem conta? </p>
                         <a href='/cadastro' > Crie sua conta </a>
                     </Styled.LadoaLado>
                 </Styled.FormCadastro>

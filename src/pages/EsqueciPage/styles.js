@@ -63,7 +63,7 @@ export const LadoaLado = styled.div`
 `;
 
 export const Logo = styled.img`
-    margin-top: 20px;
+    padding-top: 20px;
     width: 200px;
     height: 80px;
 `;
