@@ -1,21 +1,20 @@
 import React from 'react';
-import ButtonMain from '../../components/Button';
-import InputText from '../../components/InputText';
+import ExampleButton from '../../components/ExampleButton'; 
+import { Example } from './styles'
 
-import './styles.css';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 const ExamplePage = () => {
     return (
-        <div className='example'>
-            <form className='login'>
-                <InputText>
-                    Teste
-                </InputText>   
-            </form>
-            <ButtonMain>
-                    Cadastrar
-            </ButtonMain>
-        </div>
+        <Example>
+            <Navbar />
+            <ExampleButton>    
+                Valorant
+            </ExampleButton>
+            <Footer />
+        </Example>
+            
     );
 }
 
