@@ -15,7 +15,9 @@ const EsqueciPage = () => {
             <Styled.Cadastro>
                 
                 <Styled.FormCadastro>
-                    <Styled.Logo src={ImgLogo} />
+                    <a href='/'>
+                        <Styled.Logo src={ImgLogo} />
+                    </a>
                     <InputText>Email</InputText>
                     <p> insira seu email para recuperar senha</p>
                     <ButtonMain>RECUPERAR SENHA</ButtonMain>
