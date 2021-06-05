@@ -1,5 +1,7 @@
 import React from 'react';
-import Button from '../../components/Button';
+import Message from '../../components/Contact Message';
+import Input from '../../components/Contact Input';
+import Button from '../../components/Contact Button';
 import ImagemdeContato from './Imagem de Contato.jpg';
 
 import * as Styled from './styles'
@@ -14,19 +16,19 @@ return (
             <Styled.FormContainer>
                 <Styled.FormInput>
                     <Styled.Label>Nome</Styled.Label>
-                    <Styled.TextArea>Nome</Styled.TextArea>
+                    <Input></Input>
                 </Styled.FormInput>
                 <Styled.FormInput>
                     <Styled.Label>Email</Styled.Label>
-                    <Styled.TextArea>Email</Styled.TextArea>
+                    <Input></Input>
                 </Styled.FormInput>
             </Styled.FormContainer>
-                <Styled.Label>Mensagem</Styled.Label>
-                <Styled.Message>Digite aqui a sua meow-sagem...</Styled.Message>
+            <Styled.Label>Mensagem</Styled.Label>
+            <Message></Message>
             <Styled.FormContainer>
-            <Styled.Submit>
-                <Button>Enviar</Button>
-            </Styled.Submit>
+                <Styled.Submit>
+                    <Button>Enviar</Button>
+                </Styled.Submit>
             </Styled.FormContainer>
         </Styled.Form>
     </Styled.Contact>
