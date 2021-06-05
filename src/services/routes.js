@@ -8,8 +8,7 @@ const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path='/contact' component={() => <Contact />} />
-                <Route path='/aboutus' component={() => <AboutUs />} />
+                <Route path='/sobrenos' component={() => <AboutUs />} />
             </Switch>
         </BrowserRouter>
     );
