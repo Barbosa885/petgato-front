@@ -7,7 +7,7 @@ const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path='/contact' component={() => <Contact />} />
+                <Route path='/contato' component={() => <Contact />} />
             </Switch>
         </BrowserRouter>
     );

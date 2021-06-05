@@ -7,13 +7,15 @@ export const Contact = styled.form`
   align-items: center;
   height: 100vh;
 `
+
 export const Image = styled.img`
   width: 22%;
-  height: 65%;
+  height: 60%;
 `
 
 export const Form = styled.form`
   margin-left: 3rem;
+  margin-bottom: 5rem;
   width: 65%;
   height: 60%;
 `
@@ -30,6 +32,7 @@ export const Subtitle = styled.h1`
 
 export const Label = styled.label`
   color: #C882B4;
+  font-weight: bold;
   font-family: 'Montserrat',sans-serif;
   display: flex;
   flex-direction: row;
@@ -51,15 +54,5 @@ export const FormInput = styled.div`
 `
 
 export const Submit = styled.div`
-  margin-left: 90%;
-`
-
-export const Message = styled.textarea`
-  width: 100%;
-  height: 25vh;
-`
-
-export const TextArea = styled.textarea`
-  width: 30vw;
-  height: 7vh;
+  margin-left: 88%;
 `
