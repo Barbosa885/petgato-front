@@ -25,11 +25,11 @@ export const Cadastro = styled.div`
 
 export const ImagemLogin = styled.div`
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    background-size: cover;
 
     img{
+        object-fit:cover;
         width:100%;
         height:100%;
     }

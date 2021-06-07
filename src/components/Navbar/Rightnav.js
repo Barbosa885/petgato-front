@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import styled from 'styled-components'
+
 
 const Ul = styled.ul`
     list-style: none;
@@ -25,13 +26,15 @@ const Ul = styled.ul`
 
 function Rightnav({ open }) {
     return (
-    <Ul  open={open}>
-        <li><a href='/'>Página Inicial</a></li>
-        <li><a href='/sobre'>Sobre Nós</a></li>
-        <li><a href='/contato'>Fale Conosco</a></li>
-        <li><a href='/login'>Entrar</a></li>
-    </Ul>
+        <Ul>
+            <li><a href='/'>Página Inicial</a></li>
+            <li><a href='/sobre'>Sobre Nós</a></li>
+            <li><a href='/contato'>Fale Conosco</a></li>
+            <li><a href='/login'>Entrar</a></li>
+    
+        </Ul>
     )
-}
+    }     
+
 
 export default Rightnav
