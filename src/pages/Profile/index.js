@@ -6,6 +6,8 @@ import CameraIcon from './Camera.svg'
 
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import Button from '../../components/WhiteButton'
+import InputText from '../../components/InputText'
 
 
 function Profile() {
@@ -26,10 +28,15 @@ function Profile() {
             <div class='ContainerTitulo'>
                 <styled.Title> SUA CONTA </styled.Title>
                 <styled.SubTitle> Edite seu perfil </styled.SubTitle>
+            </div> 
+            <div class='ContainerInput'>
+                <InputText children='Nome'/>
+                <InputText children='Nova Senha'/>
+                <InputText children='Senha Atual'/>
+                <Button children='Salvar'/>
             </div>
         </styled.Background>
         <Footer />
-
         </>
     )
 }

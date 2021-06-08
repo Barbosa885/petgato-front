@@ -7,9 +7,9 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 
-    div.ContainerPhoto {
-    } 
-
+    div.ContainerInput {
+        flex-direction: column;
+    }
 
 `
 
@@ -54,3 +54,7 @@ font-size: 40px;
 font-weight: 700;
 color: #C882B4;
 `
+
+export const ButtonContainer = styled.div`
+`
+

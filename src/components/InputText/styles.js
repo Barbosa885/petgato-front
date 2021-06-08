@@ -4,7 +4,7 @@ export const InputdeTexto = styled.label`
     *,*::before, *::after{
         box-sizing: border-box;
     }
-
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     font-size: 14px;
     padding-top: 20px;
