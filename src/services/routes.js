@@ -7,6 +7,7 @@ import Contact from '../pages/Contact';
 import CadastroPage from '../pages/LoginPage';
 import LoginPage from '../pages/CadastroPage';
 import EsqueciPage from '../pages/EsqueciPage';
+import RecuperarPage from '../pages/RecuperarPage';
 
 const Routes = () => {
     return (
@@ -18,6 +19,7 @@ const Routes = () => {
                 <Route exact path='/login' component={LoginPage} />
                 <Route exact path='/cadastro' component={CadastroPage} />
                 <Route exact path='/esqueciSenha' component={EsqueciPage} />
+                <Route exact path='/recuperarSenha' component={RecuperarPage} />
             </Switch>
         </Router>
     );
