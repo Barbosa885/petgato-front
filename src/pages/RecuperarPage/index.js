@@ -26,6 +26,10 @@ const RecuperarPage = () => {
                     <p> insira sua nova senha</p>
                     <ButtonMain>REDEFINIR SENHA</ButtonMain>
                     <Styled.LadoaLado>
+                        <p>Não recebeu o código?</p>
+                        <a href='/esqueciSenha' >Reenviar código</a>
+                    </Styled.LadoaLado>
+                    <Styled.LadoaLado>
                         <p>Lembrou a senha?</p>
                         <a href='/login' >Faça Login</a>
                     </Styled.LadoaLado>
