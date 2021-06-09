@@ -4,6 +4,9 @@ import Input from '../../components/Contact Input';
 import Button from '../../components/WhiteButton';
 import Doguinho from './Doguinho.jpg';
 
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+
 import * as Styled from './styles'
 import api from '../../services/api';
 
@@ -41,6 +44,8 @@ const Contact = () => {
     }
 
     return (
+        <div>
+        <Navbar />
         <Styled.Contact>
             <Styled.Image src={Doguinho} alt="doguinho"/>
             <Styled.Form>
@@ -65,6 +70,8 @@ const Contact = () => {
                 </Styled.FormContainer>
             </Styled.Form>
         </Styled.Contact>
+        <Footer />
+        </div>
 );
 }
 

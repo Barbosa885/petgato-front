@@ -5,7 +5,7 @@ export const AboutUs = styled.form`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 1rem;
 `
 
 export const Text = styled.div`
@@ -53,6 +53,7 @@ export const Paragraph = styled.p`
 export const SocialMedia = styled.div`
   display: flex;
   flex-direction: row;
+  margin-bottom: 2rem;
 `
 
 export const Icon = styled.img`

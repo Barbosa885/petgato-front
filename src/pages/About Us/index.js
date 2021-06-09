@@ -6,10 +6,15 @@ import Facebook from '../../assets/Facebook.svg';
 import Instagram from '../../assets/Instagram.svg';
 import Twitter from '../../assets/Twitter.svg';
 
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+
 import * as Styled from './styles'
 
 const AboutUs = () => {
 return (
+    <div>
+    <Navbar />
     <Styled.AboutUs>
         <Styled.ImageGrid>
             <Styled.ImageTop src={Cintia} alt="cintia"/>
@@ -32,6 +37,8 @@ return (
             </Styled.SocialMedia>
         </Styled.Text>
     </Styled.AboutUs>
+    <Footer />
+    </div>
 );
 }
 
