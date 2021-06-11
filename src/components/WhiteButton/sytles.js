@@ -14,8 +14,6 @@ export const WhiteButton = styled.button`
     background-color:var(--branco);
     color: var(--cinza-escuro);
     padding: 1.75% 2.25%;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border: none;
     outline: none;
     position: relative;

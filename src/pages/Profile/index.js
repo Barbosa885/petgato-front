@@ -15,8 +15,7 @@ function Profile() {
         <>
         
         <Navbar />
-        <styled.Background>
-            <div class='ContainerPhoto'>
+            <styled.Background>
                 <styled.ProfilePhoto>
                     <img src={Cintia} />
                 </styled.ProfilePhoto>
@@ -24,18 +23,28 @@ function Profile() {
                     <styled.CamIcon src={CameraIcon}  /> 
                     Alterar foto de perfil
                 </styled.ChangePhoto>
-            </div>
-            <div class='ContainerTitulo'>
                 <styled.Title> SUA CONTA </styled.Title>
                 <styled.SubTitle> Edite seu perfil </styled.SubTitle>
-            </div> 
-            <div class='ContainerInput'>
-                <InputText children='Nome'/>
-                <InputText children='Nova Senha'/>
-                <InputText children='Senha Atual'/>
-                <Button children='Salvar'/>
-            </div>
-        </styled.Background>
+                <styled.InputNome>
+                    <InputText children='Nome'/> 
+                </styled.InputNome>
+                <styled.InputNovaSenha>
+                    <InputText children='Nova Senha'/>
+                </styled.InputNovaSenha>
+                <styled.InputSenhaAtual>
+                    <InputText children='Senha Atual'/> 
+                </styled.InputSenhaAtual>
+                <styled.InputEmail>
+                    <InputText children='Email'/> 
+                </styled.InputEmail>
+                <styled.InputConfirmSenha>
+                    <InputText children='Confirme sua senha'/> 
+                </styled.InputConfirmSenha>
+                <styled.ButtonContainer >
+                    <Button children='Salvar'/>  
+                </styled.ButtonContainer>
+                <styled.txt>Deixe em branco caso não queira alterar</styled.txt>
+            </styled.Background>
         <Footer />
         </>
     )

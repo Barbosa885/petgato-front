@@ -1,4 +1,5 @@
 import React from 'react'
+import { Background } from './styles'
 import { FooterContainer } from './styles'
 
 const Footer = () => {
@@ -6,6 +7,7 @@ const Footer = () => {
         <FooterContainer>
             <p>© 2021 - Todos os direitos reservados. Desenvolvido por Trainee Fofinho</p>
         </FooterContainer>
+        
     )
         
     

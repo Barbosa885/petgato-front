@@ -10,7 +10,7 @@ box-shadow: 0px 0px 10px black;
 flex-direction: column;
 background-color: #BA66A3;
 list-style-type: none;
-height: 90px;
+height: 80px;
 
 
     ul {

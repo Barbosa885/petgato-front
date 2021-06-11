@@ -4,12 +4,11 @@ import {Titulo} from './styles'
 
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import LoggedNavbar from '../../components/Navbar/LoggedNavbar'
 
 function index() {
     return (
         <Background>
-            <LoggedNavbar />
+            <Navbar />
             <Titulo>
                Home 
             </Titulo>
