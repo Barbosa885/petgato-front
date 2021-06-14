@@ -7,6 +7,7 @@ import ContactUs from '../pages/ContactUs';
 import LoginPage from '../pages/LoginPage';
 import CadastroPage from '../pages/CadastroPage';
 import EsqueciPage from '../pages/EsqueciPage';
+import CreatePubli from '../pages/CreatePubli';
 
 const Routes = () => {
     return (
@@ -15,7 +16,7 @@ const Routes = () => {
                 <Route path='/' exact component={Home} />
                 <Route exact path='/sobre' component={AboutUs}  />
                 <Route exact path='/contato' component={ContactUs} />
-
+                <Route exact path='/createpubli' component={() => <CreatePubli />} />
                 <Route exact path='/login' component={() => <LoginPage />} />
                 <Route exact path='/cadastro' component={() => <CadastroPage />} />
                 <Route exact path='/esqueciSenha' component={() => <EsqueciPage />} />
