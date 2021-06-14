@@ -15,7 +15,9 @@ const EsqueciPage = () => {
             <Styled.Cadastro>
                 
                 <Styled.FormCadastro>
-                    <Styled.Logo src={ImgLogo} />
+                    <a href='/'>
+                        <Styled.Logo src={ImgLogo} />
+                    </a>
                     <InputText>Email</InputText>
                     <p> insira seu email para recuperar senha</p>
                     <ButtonMain>RECUPERAR SENHA</ButtonMain>
@@ -24,7 +26,7 @@ const EsqueciPage = () => {
                         <a href='/login' >Faça Login</a>
                     </Styled.LadoaLado>
                     <Styled.LadoaLado>
-                        <p> Ainda não tem conta?</p>
+                        <p> Ainda não tem conta? </p>
                         <a href='/cadastro' > Crie sua conta </a>
                     </Styled.LadoaLado>
                 </Styled.FormCadastro>

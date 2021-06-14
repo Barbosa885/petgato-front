@@ -1,13 +1,12 @@
 import React from 'react';
 import ButtonMain from '../../components/Button';
 import InputText from '../../components/InputText';
-import ImageLogin from '../../assets/Login.jpg';
+import ImageLogin from '../../assets/Esqueci minha senha.jpg';
 import ImgLogo from '../../assets/gatinho_petgato.svg';
-import * as Styled from './styles';
-import LoginPage from '../LoginPage'
+import * as Styled from './styles'
 
 
-const CadastroPage = () => {
+const RecuperarPage = () => {
     return (
         <Styled.DivLogin>
             <Styled.ImagemLogin> 
@@ -20,10 +19,19 @@ const CadastroPage = () => {
                         <Styled.Logo src={ImgLogo} />
                     </a>
                     <InputText>Email</InputText>
-                    <InputText>Senha</InputText>
-                    <ButtonMain>ENTRAR</ButtonMain>
+                    <p> insira seu email para redefinir a senha</p>
+                    <InputText>Código</InputText>
+                    <p> insira o código recebido no email</p>
+                    <InputText>Nova Senha</InputText>
+                    <p> insira sua nova senha</p>
+                    <ButtonMain>REDEFINIR SENHA</ButtonMain>
                     <Styled.LadoaLado>
-                        <a href='/esqueciSenha' >Esqueci minha senha</a>
+                        <p>Não recebeu o código?</p>
+                        <a href='/esqueciSenha' >Reenviar código</a>
+                    </Styled.LadoaLado>
+                    <Styled.LadoaLado>
+                        <p>Lembrou a senha?</p>
+                        <a href='/login' >Faça Login</a>
                     </Styled.LadoaLado>
                     <Styled.LadoaLado>
                         <p> Ainda não tem conta? </p>
@@ -36,4 +44,4 @@ const CadastroPage = () => {
     );
 }
 
-export default CadastroPage;
+export default RecuperarPage;
