@@ -10,6 +10,7 @@ import CadastroPage from '../pages/LoginPage';
 import LoginPage from '../pages/CadastroPage';
 import EsqueciPage from '../pages/EsqueciPage';
 import Profile from '../pages/Profile';
+import EditarPerfil from '../pages/Backoffice/EditarPerfil'
 
 const Routes = () => {
     return (
@@ -30,6 +31,7 @@ const Routes = () => {
                 <Route exact path='/cadastro' component={CadastroPage} />
                 <Route exact path='/esqueciSenha' component={EsqueciPage} />
                 <Route exact path='/meuPerfil' component={Profile} />
+                <Route exact path='/editarPerfil' component={EditarPerfil} />
             </Switch>
         </Router>
     );
