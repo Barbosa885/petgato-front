@@ -31,7 +31,7 @@ const CreatePubli = () => {
             <InputText
             value={lista.name}
             onChange={(event) => {
-                setLista({ ...lista, name: event.target.value });
+                setLista({ ...lista, name: event });
             }}
             >
             Titulo da Publicação
