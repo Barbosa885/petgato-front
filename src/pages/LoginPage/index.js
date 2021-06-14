@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import api from '../../services/api';
 import ButtonMain from '../../components/Button';
 import InputText from '../../components/InputText';
 import ImageLogin from '../../assets/Login.jpg';
 import ImgLogo from '../../assets/gatinho_petgato.svg';
 import * as Styled from './styles';
-import LoginPage from '.'
-
 
 const LoginPage = () => {
     const [name, setName] = useState('');
