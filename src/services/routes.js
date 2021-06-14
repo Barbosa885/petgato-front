@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from '../pages/Home';
 import AboutUs from '../pages/About Us';
-import Contact from '../pages/Contact';
+import ContactUs from '../pages/Contact';
 import CadastroPage from '../pages/LoginPage';
 import LoginPage from '../pages/CadastroPage';
 import EsqueciPage from '../pages/EsqueciPage';
@@ -22,7 +22,6 @@ const Routes = () => {
                 <Route exact path='/login' component={() => <LoginPage />} />
                 <Route exact path='/cadastro' component={() => <CadastroPage />} />
                 <Route exact path='/esqueciSenha' component={() => <EsqueciPage />} />
-                <Route exact path='/contato' component={Contact} />
                 <Route exact path='/login' component={LoginPage} />
                 <Route exact path='/cadastro' component={CadastroPage} />
                 <Route exact path='/esqueciSenha' component={EsqueciPage} />
