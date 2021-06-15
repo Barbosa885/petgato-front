@@ -7,19 +7,22 @@ import "react-quill/dist/quill.snow.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import InputText from "../../components/InputText";
-import Button from "../../components/Button";
+import InputFile from "../../components/InputFile";
 import ButtonMain from "../../components/Button";
 
 const CreatePubli = () => {
+    // const [name, setName] = useState('');
+    // const [content, setContent] = useState('');
+    // const [banner_image, setBannerImage] = useState(null);
   
     const [lista, setLista] = useState({
         name: "",
         content: "",
+        banner_image: null
     });
 
     const handleOnChange = (text) => {
         setLista({ ...lista, content: text });
-        console.log(lista);
     };
 
     return (
@@ -45,12 +48,14 @@ const CreatePubli = () => {
                     [{ 'header': [1, 2, 3, false] }],
                     ['bold', 'italic', 'underline','strike', 'blockquote'],
                     [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
-                    ['link', 'image'],
+                    ['link'],
                     ['clean']
                 ]
             }}
             />
-            ;<ButtonMain> Publicar </ButtonMain>
+            
+            <InputFile value={lista.banner_image} onChange={handleOnChange}>Enviar</InputFile>
+            <ButtonMain onClick={}> Publicar </ButtonMain>
         </Styled.Conteudo>
         <Footer />
         </Styled.Pagina>
