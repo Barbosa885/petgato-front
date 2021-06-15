@@ -56,5 +56,8 @@ export const Conteudo = styled.div`
         border-color: #C882B4;
     }
 
+    input{
+        margin: 50px 0px;
+    }
    
 `

@@ -25,7 +25,7 @@ const Routes = () => {
                 <Route exact path='/login' component={LoginPage} />
                 <Route exact path='/cadastro' component={CadastroPage} />
                 <Route exact path='/esqueciSenha' component={EsqueciPage} />
-                <Route exact path='/postagem' component={VisualizacaoPost} />
+                <Route exact path='/postagem/:id' component={VisualizacaoPost} />
                 <Route exact path='/recuperarSenha' component={RecuperarPage} />
             </Switch>
         </Router>
