@@ -19,7 +19,7 @@ const InputText = ({children,value, onChange}) => {
 
     return (
         <Styled.InputdeTexto>
-            <input value={value} onChange={onChange} type='text' required />
+            <input value={value} onChange={e => onChange(e.target.value)} type='text' required />
             <span>{children}</span>
         </Styled.InputdeTexto>
     );
