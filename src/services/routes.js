@@ -8,7 +8,6 @@ import CadastroPage from '../pages/LoginPage';
 import LoginPage from '../pages/CadastroPage';
 import EsqueciPage from '../pages/EsqueciPage';
 import CreatePubli from '../pages/CreatePubli';
-import EditPubli from '../pages/Edit Publi';
 import VisualizacaoPost from '../pages/Visualizacao Post';
 import RecuperarPage from '../pages/RecuperarPage';
 import BackofficePost from '../pages/Backoffice Post';
@@ -21,7 +20,6 @@ const Routes = () => {
                 <Route exact path='/sobre' component={AboutUs}  />
                 <Route exact path='/contato' component={ContactUs} />
                 <Route exact path='/createpubli' component={() => <CreatePubli />} />
-                <Route exact path='/editpubli/:id' component={() => <EditPubli />} />
                 <Route exact path='/login' component={() => <LoginPage />} />
                 <Route exact path='/cadastro' component={() => <CadastroPage />} />
                 <Route exact path='/esqueciSenha' component={() => <EsqueciPage />} />
