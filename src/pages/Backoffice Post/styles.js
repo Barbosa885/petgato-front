@@ -4,17 +4,18 @@ export const Backoffice = styled.div`
     font-family: 'MontSerrat', sans-serif;
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 2rem;
 `;
 
 export const Title = styled.span`
     font-family: 'Montserrat',sans-serif;
-    font-size: 22px
+    font-size: 18px
 `
 
 export const Subtitle = styled.h1`
     font-family: 'Montserrat',sans-serif;
     color: #C882B4;
+    font-size: 28px
 `
 
 export const Table = styled.tr`
@@ -26,7 +27,7 @@ export const Table = styled.tr`
 export const TableTitle = styled.th`
     text-align: left;
     padding: 8px;
-    font-size: 25px;
+    font-size: 15px;
     display: inline-block;
     width: 180px;
 `
@@ -34,30 +35,30 @@ export const TableTitle = styled.th`
 export const Subtable = styled.td`
     text-align: left;
     padding: 8px;
-    font-size: 25px;
+    font-size: 17px;
     display: inline-block;
     width: 180px;
     overflow: hidden !important;
 `
 
-export const Link = styled.td`
-    text-align: left;
-    padding: 8px;
-    margin-left: 1rem;
-    font-size: 20px;
-    display: inline-block;
-    overflow: hidden !important;
-    color: #C882B4;
-`
-
 export const PostTitle = styled.td`
     text-align: left;
     padding: 8px;
-    font-size: 25px;
+    font-size: 20px;
     display: inline-block;
     width: 550px;
     overflow: hidden !important;
     text-overflow: ellipsis;
+`
+
+export const Edit = styled.td`
+    text-align: left;
+    padding: 8px;
+    margin-left: 1rem;
+    font-size: 15px;
+    display: inline-block;
+    overflow: hidden !important;
+    color: #C882B4;
 `
 
 export const Div = styled.div`
@@ -82,4 +83,11 @@ export const Button= styled.button`
     &:hover {
       background: #BA66A3;
     }
+`
+
+export const PostDiv= styled.div`
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    width: 550px;
 `
