@@ -17,7 +17,6 @@ const BackofficePost = () => {
     api.get(`posts?page=${id}&per_page=4`, {
         headers:{
             'Authorization': `${token}`,
-            'Content-Type': 'multipart/form-data'
         }
     })
     .then((response) => {
@@ -43,7 +42,6 @@ const BackofficePost = () => {
       return parseInt(id) + 1;
     }
 
-    console.log(posts)
     return (
         <div>
             <Navbar/>
@@ -62,11 +60,13 @@ const BackofficePost = () => {
                         <Styled.Subtable>{post.id}</Styled.Subtable>
                         <Styled.Subtable>{post.created_at}</Styled.Subtable>
                         <Styled.PostTitle><Styled.PostDiv>{post.title}</Styled.PostDiv></Styled.PostTitle>
-                        <Styled.Edit><strong>Excluir</strong></Styled.Edit>
-                        <Styled.Edit><strong>Editar</strong></Styled.Edit>
+                        <Styled.EditButton><strong>Excluir</strong></Styled.EditButton>
+                        <Styled.EditButton><strong>Editar</strong></Styled.EditButton>
                     </Styled.Table>)}
                 <Styled.Div>
+                <Link to={'/createPubli'}>
                     <PublishButton>Nova publicação</PublishButton>
+                </Link>
                     <Styled.PageButtonsDiv>
                         <Link to={`/backofficePost/${handlePreviousPage(id)}`}>
                             <Styled.Button>{'<<'}</Styled.Button>

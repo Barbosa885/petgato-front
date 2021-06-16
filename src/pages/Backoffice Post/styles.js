@@ -51,7 +51,7 @@ export const PostTitle = styled.td`
     text-overflow: ellipsis;
 `
 
-export const Edit = styled.td`
+export const EditButton = styled.td`
     text-align: left;
     padding: 8px;
     margin-left: 1rem;
