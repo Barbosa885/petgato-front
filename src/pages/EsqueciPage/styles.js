@@ -27,9 +27,10 @@ export const ImagemLogin = styled.div`
     display: flex;
     width: 150%;
     height: 100%;
-
+    background-size: cover;
+    
     img{
-        object-fit:cover;
+        object-fit: cover;
         width:100%;
         height:100%;
     }

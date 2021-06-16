@@ -23,11 +23,14 @@ const Routes = () => {
                 <Route path='/' exact component={Home} />
                 <Route exact path='/sobre' component={AboutUs}  />
                 <Route exact path='/contato' component={ContactUs} />
-                <Route exact path='/createpubli' component={CreatePubli} />
+                <Route exact path='/createpubli' component={() => <CreatePubli />} />
+                <Route exact path='/login' component={() => <LoginPage />} />
+                <Route exact path='/cadastro' component={() => <CadastroPage />} />
+                <Route exact path='/esqueciSenha' component={() => <EsqueciPage />} />
                 <Route exact path='/login' component={LoginPage} />
                 <Route exact path='/cadastro' component={CadastroPage} />
                 <Route exact path='/esqueciSenha' component={EsqueciPage} />
-                <Route exact path='/postagem' component={VisualizacaoPost} />
+                <Route exact path='/postagem/:id' component={VisualizacaoPost} />
                 <Route exact path='/recuperarSenha' component={RecuperarPage} />
                 <Route exact path='/meuPerfil' component={Profile} />
                 <Route exact path='/editarUsuario' component={BackofficeEditarUsuario} />

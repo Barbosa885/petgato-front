@@ -14,11 +14,9 @@ export const ButtonPrin = styled.button`
     font-weight: 700;
     font-size: 16px;
     font-family: 'MontSerrat', sans-serif;
-
     --accent-color: #C882B4;
     --color: #BA66A3;
     --rosa-claro: #FBE9F6;
-
     &::before{
         content: '';
         position: absolute;
@@ -29,25 +27,20 @@ export const ButtonPrin = styled.button`
         right: 0;
         z-index: -1;
         background-color: var(--color);
-
         transition: transform 300ms ease-in-out;
         transform: scaleX(0);
         transform-origin: left ;
     }
-
     &:hover::before,
     &:focus::before{
         transform: scaleX(1);
     }
-
     &{
         transition: color 300ms ease-in-out;
         z-index: 1;
     }
-
     &:hover,
     &:focus{
         color:var(--branco);
     }
 `;
-
