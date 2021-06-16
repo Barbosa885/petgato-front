@@ -15,6 +15,7 @@ import RecuperarPage from '../pages/RecuperarPage';
 import Profile from '../pages/Profile';
 import BackofficeEditarUsuario from '../pages/Backoffice/EditarPerfil'
 
+import BackofficePost from '../pages/Backoffice Post';
 
 const Routes = () => {
     return (
@@ -34,6 +35,7 @@ const Routes = () => {
                 <Route exact path='/recuperarSenha' component={RecuperarPage} />
                 <Route exact path='/meuPerfil' component={Profile} />
                 <Route exact path='/editarUsuario' component={BackofficeEditarUsuario} />
+                <Route exact path='/backofficePost/:id' component={BackofficePost} />
             </Switch>
         </Router>
     );
