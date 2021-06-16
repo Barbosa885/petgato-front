@@ -10,6 +10,7 @@ import EsqueciPage from '../pages/EsqueciPage';
 import CreatePubli from '../pages/CreatePubli';
 import VisualizacaoPost from '../pages/Visualizacao Post';
 import RecuperarPage from '../pages/RecuperarPage';
+import BackofficePost from '../pages/Backoffice Post';
 
 const Routes = () => {
     return (
@@ -27,6 +28,7 @@ const Routes = () => {
                 <Route exact path='/esqueciSenha' component={EsqueciPage} />
                 <Route exact path='/postagem/:id' component={VisualizacaoPost} />
                 <Route exact path='/recuperarSenha' component={RecuperarPage} />
+                <Route exact path='/backofficePost/:id' component={BackofficePost} />
             </Switch>
         </Router>
     );
