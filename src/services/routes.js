@@ -28,7 +28,7 @@ const Routes = () => {
                 <Route exact path='/esqueciSenha' component={EsqueciPage} />
                 <Route exact path='/postagem/:id' component={VisualizacaoPost} />
                 <Route exact path='/recuperarSenha' component={RecuperarPage} />
-                <Route exact path='/backofficePost' component={BackofficePost} />
+                <Route exact path='/backofficePost/:id' component={BackofficePost} />
             </Switch>
         </Router>
     );
