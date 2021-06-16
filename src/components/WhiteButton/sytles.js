@@ -52,7 +52,7 @@ export const WhiteButton = styled.button`
     &:hover,
     &:focus{
         color:var(--branco);
-        border: none;
+        border: 10%;
     }
 `;
 

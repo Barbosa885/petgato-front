@@ -6,47 +6,39 @@ import CameraIcon from './Camera.svg';
 
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Button from '../../components/WhiteButton';
+import WhiteButton from '../../components/WhiteButton';
 import WhiteInputText from '../../components/WhiteInputText';
 
 
 function Profile() {
     return (
-        <>
-        
-        <Navbar />
-            <styled.Background>
-                <styled.ProfilePhoto>
-                    <img src={Cintia} />
-                </styled.ProfilePhoto>
-                <styled.ChangePhoto>
-                    <styled.CamIcon src={CameraIcon}  /> 
-                    Alterar foto de perfil
-                </styled.ChangePhoto>
-                <styled.Title> SUA CONTA </styled.Title>
-                <styled.SubTitle> Edite seu perfil </styled.SubTitle>
-                <styled.InputNome>
-                    <WhiteInputText children='Nome'/> 
-                </styled.InputNome>
-                <styled.InputNovaSenha>
-                    <WhiteInputText children='Nova Senha'/>
-                </styled.InputNovaSenha>
-                <styled.InputSenhaAtual>
-                    <WhiteInputText children='Senha Atual'/> 
-                </styled.InputSenhaAtual>
-                <styled.InputEmail>
-                    <WhiteInputText children='Email'/> 
-                </styled.InputEmail>
-                <styled.InputConfirmSenha>
-                    <WhiteInputText children='Confirme sua senha'/> 
-                </styled.InputConfirmSenha>
-                <styled.ButtonContainer >
-                    <Button children='Salvar'/>  
-                </styled.ButtonContainer>
-                <styled.txt>Deixe em branco caso não queira alterar</styled.txt>
-            </styled.Background>
-        <Footer />
-        </>
+    <>
+    <Navbar />
+    <styled.Background>
+        <styled.PictureContainer>
+            <img src={Cintia} class='Foto' />
+            <div class='containerBotao'>
+                <img src={CameraIcon} class='Botao' />
+                <a> Alterar foto de perfil </a>
+            </div>
+        </styled.PictureContainer>
+    <styled.Form>
+        <styled.Title> SUA CONTA </styled.Title>
+        <styled.Subtitle> Edite seu perfil </styled.Subtitle>
+        <styled.InputContainer >
+            <WhiteInputText children='Nome' />
+            <WhiteInputText children='Email' />
+            <WhiteInputText children='Nova senha' />
+            <WhiteInputText children='Confirme sua senha' />
+                <WhiteInputText children='Senha atual' />
+            </styled.InputContainer>
+        <styled.ButtonContainer>
+          <WhiteButton children='Salvar' />
+        </styled.ButtonContainer>  
+      </styled.Form>
+    </styled.Background>
+    <Footer />
+    </>
     )
 }
 
