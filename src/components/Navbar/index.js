@@ -1,8 +1,8 @@
-import React, {useState, createContext} from 'react';
+import React, {useState} from 'react';
 import LogoPetGato from '../../assets/gatinho_petgato_branco.svg';
 import { Background, Logo } from './styles';
 
-import Burguer from './Burguer'
+import Burguer from '../Navbar/Burguer'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -14,9 +14,9 @@ export default function Navbar() {
     return (
         <Background>
             <a href='/' onClick={handleToggle}>
-                <Logo src={LogoPetGato} />
+                <Logo src={LogoPetGato}/>
             </a>
-            <Burguer /> 
+            <Burguer/> 
         </Background>
 
     )

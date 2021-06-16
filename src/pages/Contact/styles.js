@@ -5,18 +5,16 @@ export const Contact = styled.form`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 1rem;
 `
 
 export const Image = styled.img`
-  object-fit: cover;
-  width: 30%;
-  height: 60%;
+  width: 25vw;
+  height: 60vh;
 `
 
 export const Form = styled.form`
   margin-left: 3rem;
-  margin-bottom: 5rem;
   width: 65%;
   height: 60%;
 `

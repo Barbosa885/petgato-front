@@ -2,12 +2,12 @@ import React, { useLayoutEffect } from 'react';
 import * as styled from './styles';
 
 import Cintia from './Cintia.jpg';
-import CameraIcon from './Camera.svg'
+import CameraIcon from './Camera.svg';
 
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
-import Button from '../../components/WhiteButton'
-import InputText from '../../components/InputText'
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Button from '../../components/WhiteButton';
+import WhiteInputText from '../../components/WhiteInputText';
 
 
 function Profile() {
@@ -26,19 +26,19 @@ function Profile() {
                 <styled.Title> SUA CONTA </styled.Title>
                 <styled.SubTitle> Edite seu perfil </styled.SubTitle>
                 <styled.InputNome>
-                    <InputText children='Nome'/> 
+                    <WhiteInputText children='Nome'/> 
                 </styled.InputNome>
                 <styled.InputNovaSenha>
-                    <InputText children='Nova Senha'/>
+                    <WhiteInputText children='Nova Senha'/>
                 </styled.InputNovaSenha>
                 <styled.InputSenhaAtual>
-                    <InputText children='Senha Atual'/> 
+                    <WhiteInputText children='Senha Atual'/> 
                 </styled.InputSenhaAtual>
                 <styled.InputEmail>
-                    <InputText children='Email'/> 
+                    <WhiteInputText children='Email'/> 
                 </styled.InputEmail>
                 <styled.InputConfirmSenha>
-                    <InputText children='Confirme sua senha'/> 
+                    <WhiteInputText children='Confirme sua senha'/> 
                 </styled.InputConfirmSenha>
                 <styled.ButtonContainer >
                     <Button children='Salvar'/>  
