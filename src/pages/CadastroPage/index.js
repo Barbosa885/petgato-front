@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import ButtonMain from '../../components/Button';
 import InputText from '../../components/InputText';
-import ImageLogin from '../../assets/Login.jpg';
+import ImageLogin from '../../assets/Cadastro.jpg';
 import ImgLogo from '../../assets/gatinho_petgato.svg';
 import * as Styled from './styles';
 import api from '../../services/api';
@@ -61,9 +61,6 @@ const CadastroPage = () => {
                     <InputText value={email} onChange={setEmail}>Email</InputText>
                     <InputText value={senha} onChange={setSenha}>Senha</InputText>
                     <ButtonMain onClick={sendMessage}>ENTRAR</ButtonMain>
-                    <Styled.LadoaLado>
-                        <a href='/esqueciSenha' >Esqueci minha senha</a>
-                    </Styled.LadoaLado>
                     <Styled.LadoaLado>
                         <p> Ainda não tem conta? </p>
                         <a href='/cadastro' > Crie sua conta </a>

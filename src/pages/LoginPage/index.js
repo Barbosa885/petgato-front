@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import ButtonMain from '../../components/Button';
 import InputText from '../../components/InputText';
-import ImageLogin from '../../assets/Cadastro.jpg';
+import ImageLogin from '../../assets/Login.jpg';
 import ImgLogo from '../../assets/gatinho_petgato.svg';
 import * as Styled from './styles'
 import api from '../../services/api';
@@ -58,7 +58,6 @@ const LoginPage = () => {
             alert('Ocorreu um erro! Tente novamente.');
         });
     }
-
 
     return (
         <Styled.DivLogin>

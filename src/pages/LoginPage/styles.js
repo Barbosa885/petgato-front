@@ -34,7 +34,6 @@ export const ImagemLogin = styled.div`
         height:100%;
         object-fit: cover;
     }
-
 `;
 
 export const FormCadastro = styled.div`
