@@ -1,37 +1,57 @@
-import React, { useState } from 'react';
-import api from '../../services/api';
+import React, {useState} from 'react';
 import ButtonMain from '../../components/Button';
 import InputText from '../../components/InputText';
 import ImageLogin from '../../assets/Login.jpg';
 import ImgLogo from '../../assets/gatinho_petgato.svg';
-import * as Styled from './styles';
+import * as Styled from './styles'
+import api from '../../services/api';
+import {useHistory} from 'react-router-dom';
+
 
 const LoginPage = () => {
-    const [name, setName] = useState('');
+    const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [senha, setSenha] = useState('');
+    const [confirmSenha, setConfirmSenha] = useState('');
+
+    let history = useHistory();
+    
+
+    // // verifica se os campos estão todos preeenchidos
+    // if (nome.length === 0 || email.length === 0 || senha.length === 0 || confirmSenha.length === 0) {
+    //     alert('Por favor, preencha todos os campos!');
+    //     return;
+    // }
 
     const sendMessage = async (e) => {
         e.preventDefault(); // não recarregar a página
         
         // verifica se os campos estão todos preeenchidos
-        if (name.length === 0 || email.length === 0 || password.length === 0) {
+        if (nome.length === 0 || email.length === 0 || senha.length === 0 || confirmSenha.length === 0) {
             alert('Por favor, preencha todos os campos!');
             return;
         }
 
+        // console.log(nome);
+        // console.log(email);
+        // console.log(senha);
+        // console.log(confirmSenha);
+
         api.post('/users', {
-            name: name,
+            name: nome,
             email: email,
-            password : password
+            password: senha,
+            password_confirmation: confirmSenha
         })
         .then(() => {
-            alert('Mensagem enviada com sucesso!');
+            alert('Cadastro efetuado com sucesso');
 
             // limpa os campos preenchidos
-            setName('');
+            setNome('');
             setEmail('');
-            setPassword('');
+            setSenha('');
+            setConfirmSenha('');
+            history.push('/login');
         })
         .catch(error => {
             console.error(error);
@@ -50,15 +70,14 @@ const LoginPage = () => {
                     <a href='/'>
                         <Styled.Logo src={ImgLogo} />
                     </a>
-                    <InputText >Email</InputText>
-                    <InputText>Senha</InputText>
-                    <ButtonMain>ENTRAR</ButtonMain>
+                    <InputText value={nome} onChange={setNome}>Nome</InputText>
+                    <InputText value={email} onChange={setEmail}>Email</InputText>
+                    <InputText value={senha} onChange={setSenha}>Senha</InputText>
+                    <InputText value={confirmSenha} onChange={setConfirmSenha}>Confirme sua senha</InputText>
+                    <ButtonMain onClick={sendMessage} >CADASTRAR</ButtonMain>
                     <Styled.LadoaLado>
-                        <a href='/esqueciSenha' >Esqueci minha senha</a>
-                    </Styled.LadoaLado>
-                    <Styled.LadoaLado>
-                        <p> Ainda não tem conta? </p>
-                        <a href='/cadastro' > Crie sua conta </a>
+                            <p> Já possui conta? </p>
+                            <a href='/login' > Faça Login </a>
                     </Styled.LadoaLado>
                 </Styled.FormCadastro>
                 
