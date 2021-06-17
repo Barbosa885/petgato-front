@@ -41,7 +41,7 @@ export const Subtable = styled.td`
     overflow: hidden !important;
 `
 
-export const PostTitle = styled.td`
+export const ContactTitle = styled.td`
     text-align: left;
     padding: 8px;
     font-size: 20px;
@@ -49,6 +49,13 @@ export const PostTitle = styled.td`
     width: 550px;
     overflow: hidden !important;
     text-overflow: ellipsis;
+`
+
+export const ContactDiv= styled.div`
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    width: 550px;
 `
 
 export const EditButton = styled.td`
@@ -69,7 +76,7 @@ export const Div = styled.div`
 
 export const PageButtonsDiv= styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 30px;
 `
 
@@ -85,9 +92,15 @@ export const Button= styled.button`
     }
 `
 
-export const PostDiv= styled.div`
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    width: 550px;
+export const Close = styled.div`
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    &:hover,
+    &:focus {
+        color: #BA66A3;
+        text-decoration: none;
+        cursor: pointer;
+    }
 `
