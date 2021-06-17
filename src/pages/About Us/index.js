@@ -14,7 +14,6 @@ import * as Styled from './styles'
 const AboutUs = () => {
 return (
     <div>
-    <Navbar />
     <Styled.AboutUs>
         <Styled.ImageGrid>
             <Styled.ImageTop src={Cintia} alt="cintia"/>
@@ -37,7 +36,6 @@ return (
             </Styled.SocialMedia>
         </Styled.Text>
     </Styled.AboutUs>
-    <Footer />
     </div>
 );
 }

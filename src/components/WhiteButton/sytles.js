@@ -14,8 +14,6 @@ export const WhiteButton = styled.button`
     background-color:var(--branco);
     color: var(--cinza-escuro);
     padding: 1.75% 2.25%;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border: none;
     outline: none;
     position: relative;
@@ -23,10 +21,7 @@ export const WhiteButton = styled.button`
     font-weight: 700;
     font-size: 16px;
     font-family: 'MontSerrat', sans-serif;
-    border: 3px solid var(--rosa-escuro);
-    
-
-    
+    border: 3px solid var(--rosa-media);
 
     &::before{
         content: '';
@@ -57,7 +52,7 @@ export const WhiteButton = styled.button`
     &:hover,
     &:focus{
         color:var(--branco);
-        border: none;
+        border: 10%;
     }
 `;
 

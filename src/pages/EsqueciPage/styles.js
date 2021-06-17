@@ -18,18 +18,17 @@ export const Cadastro = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: 100%;
 
 `;
 
 export const ImagemLogin = styled.div`
     display: flex;
-    width: 100%;
+    width: 150%;
     height: 100%;
     background-size: cover;
     
-
     img{
         object-fit: cover;
         width:100%;

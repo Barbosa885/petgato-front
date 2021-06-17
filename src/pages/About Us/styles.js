@@ -20,12 +20,13 @@ export const ImageGrid = styled.div`
 `
 
 export const ImageContainer = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `
 
 export const ImageTop = styled.img`
+  object-fit: cover;
   width: 100%;
   height: 65%;
   margin-bottom: 1rem;

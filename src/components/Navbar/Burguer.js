@@ -13,14 +13,12 @@ const StyledBurguer = styled.div`
     flex-flow: column nowrap;
     z-index: 99;
     display: none;
-
     @media (max-width: 768px) {
         cursor: pointer;
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
     }
-
     div{
         width: 2rem;
         height: 0.25rem;
@@ -29,7 +27,6 @@ const StyledBurguer = styled.div`
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.2s linear;
-
         &:nth-child(1){
             transform: ${({open}) => open? 'rotate(45deg)' :  'rotate(0)'};
         }
@@ -41,7 +38,6 @@ const StyledBurguer = styled.div`
             transform: ${({open}) => open? 'rotate(-45deg)' :  'rotate(0)'}
         }
     }
-
 `
 
 const Burguer = () => {

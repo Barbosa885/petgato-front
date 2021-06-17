@@ -11,8 +11,6 @@ flex-direction: column;
 background-color: #BA66A3;
 list-style-type: none;
 height: 90px;
-
-
     ul {
         position: none;
         margin: 0;
@@ -23,7 +21,6 @@ height: 90px;
         overflow: hidden;
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
-
         @media (max-width: 768px) {
         margin: 0;
         padding: 0;
@@ -33,10 +30,8 @@ height: 90px;
         justify-content: flex-start;
         flex-flow: column nowrap;
         font-size: 1.5rem;
-
         };
         
-
         a {
             padding: 15px;
             text-decoration: none;
@@ -50,9 +45,9 @@ height: 90px;
             padding: 16px 0 5px;
             margin: 0 25px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
-            transition: .4s;
+            transition: 0.3s;
         };
         
         
@@ -67,14 +62,11 @@ height: 90px;
         
     @media (max-width: 768px) {
     padding: 5%;
-
     }
         
         
         
     };
-
-
 `;
 
 export const Logo = styled.img`
@@ -86,6 +78,4 @@ margin-left: 4vw;
 width: 100px;
 height: 50px;
 margin-top: 1.5%;
-
 ` 
-

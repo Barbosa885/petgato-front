@@ -9,7 +9,6 @@ export const DivLogin = styled.div`
     justify-content: center;
     width: 100%;
     height: 100vh;
-
 `;
 
 export const Cadastro = styled.div`
@@ -20,7 +19,6 @@ export const Cadastro = styled.div`
     align-items: center;
     width: 50%;
     height: 100%;
-
 `;
 
 export const ImagemLogin = styled.div`
@@ -28,13 +26,11 @@ export const ImagemLogin = styled.div`
     width: 100%;
     height: 100%;
     background-size: cover;
-
     img{
         width:100%;
         height:100%;
         object-fit: cover;
     }
-
 `;
 
 export const FormCadastro = styled.div`
@@ -45,7 +41,6 @@ export const FormCadastro = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;
-
 `;
 
 export const LadoaLado = styled.div`
@@ -53,9 +48,7 @@ export const LadoaLado = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     font-size: 16px;
-
     a{
         margin-left: 12px;
         margin-right: 12px;

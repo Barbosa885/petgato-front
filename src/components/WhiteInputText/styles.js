@@ -17,7 +17,7 @@ export const InputdeTexto = styled.label`
         background: none;
         padding: 12px;
         border-radius: 3px;
-        width: 250px;
+        width: 100%;
         outline: none;
         font-size: 14px;
         transition: border-color 0.3 ease; 
@@ -40,7 +40,7 @@ export const InputdeTexto = styled.label`
         top: 33%;
         font-size: 10px;
         color: #BA66A3;
-        background: #FBE9F6;
+        background: #FFFFFF;
     }
 
     & input:valid + span,

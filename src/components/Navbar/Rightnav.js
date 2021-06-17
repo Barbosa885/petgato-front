@@ -5,7 +5,6 @@ const Ul = styled.ul`
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-
 @media (max-width: 768px) {
     position: sticky;
     flex-flow: column nowrap;
@@ -18,9 +17,7 @@ const Ul = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-
 }
-
 `
 
 function Rightnav({ open }) {
@@ -29,7 +26,7 @@ function Rightnav({ open }) {
         <li><a href='/'>Página Inicial</a></li>
         <li><a href='/sobre'>Sobre Nós</a></li>
         <li><a href='/contato'>Fale Conosco</a></li>
-        <li><a href='/login'>Entrar</a></li>
+        <li><a href='/login'>{localStorage.getItem('token') ? 'Minha Conta' : 'Entrar'}</a></li>
     </Ul>
     )
 }
