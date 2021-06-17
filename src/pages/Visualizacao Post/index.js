@@ -10,7 +10,7 @@ import Cadastro from '../../assets/Cadastro.jpg';
 import * as Styled from './styles'
 
 const VisualizacaoPost = () => {
-    const [ post , setPost] = useState({});
+    const [ post , setPost] = useState({content:{body:null}});
     const [data, setData ] = useState('');
     const [hora, setHora ] = useState('');
 
@@ -51,7 +51,7 @@ const VisualizacaoPost = () => {
                 <Styled.Title>{post.title}</Styled.Title>
                 <Styled.Date>{nomeLegal(data)}</Styled.Date>
                 <Styled.Banner src={post.banner_image}></Styled.Banner>
-                <Styled.Body dangerouslySetInnerHTML={{ __html: post.content }}>
+                <Styled.Body dangerouslySetInnerHTML={{ __html: post.content.body }}>
                     
                 </Styled.Body>
             </Styled.Page>

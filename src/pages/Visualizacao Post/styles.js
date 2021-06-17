@@ -29,7 +29,7 @@ export const Back = styled.label`
 `
 
 export const Banner = styled.img`
-  
+  object-fit:cover;
 `
 
 export const Body = styled.div`

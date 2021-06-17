@@ -62,6 +62,9 @@ const CadastroPage = () => {
                     <InputText value={senha} onChange={setSenha}>Senha</InputText>
                     <ButtonMain onClick={sendMessage}>ENTRAR</ButtonMain>
                     <Styled.LadoaLado>
+                        <a href='/cadastro' > Esqueci a minha Senha </a>
+                    </Styled.LadoaLado>
+                    <Styled.LadoaLado>
                         <p> Ainda não tem conta? </p>
                         <a href='/cadastro' > Crie sua conta </a>
                     </Styled.LadoaLado>
