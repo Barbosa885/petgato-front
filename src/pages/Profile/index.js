@@ -26,7 +26,7 @@ function Profile() {
         <styled.Subtitle> Edite seu perfil </styled.Subtitle>
         <styled.InputContainer >
             <WhiteInputText children='Nome' />
-            <WhiteInputText children='Email' />
+            <WhiteInputText children='Email' disabled/>
             <WhiteInputText children='Nova senha' />
             <WhiteInputText children='Confirme sua senha' />
                 <WhiteInputText children='Senha atual' />

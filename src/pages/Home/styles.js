@@ -9,6 +9,7 @@ export const LeftBox = styled.div`
   display: flex;
   width: 100%;
   height: 400px;
+  flex-direction: column;
 `
 
 export const PhotoContainer = styled.div`
@@ -63,12 +64,42 @@ export const Texto = styled.a`
 
 export const RedesContainers = styled.div`
   display: flex;
-  margin-top: 10px;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 40%;
+  height: 25px;
+  margin-top: 15px;
+  justify-content: space-between;
+  
+  img.Twitter {
+    cursor: pointer;
+    border-style: solid;
+    border-color: #FFFF;
+  }
+
+  img.Facebook {
+    cursor: pointer;
+    border-style: solid;
+    border-color: #FFFF;
+  }
+
+  img.Instagram {
+    cursor: pointer;
+    border-style: solid;
+    border-color: #ffffff;
+  }
 `
 
-export const SearchInput = styled.div`
-  
+export const SearchContainer = styled.div`
+  display: flex;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  img.Botao {
+    width: 25px;
+    height: 25px;
+    margin-left: -2rem;
+    z-index: 1;
+  }
 `
 

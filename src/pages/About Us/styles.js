@@ -58,5 +58,6 @@ export const SocialMedia = styled.div`
 `
 
 export const Icon = styled.img`
+  cursor: pointer;
   margin-right: 1rem;
 `

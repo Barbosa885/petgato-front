@@ -51,7 +51,6 @@ const BackofficeContact = () => {
 
     return (
         <div>
-            <Navbar/>
             <Styled.Backoffice>
                 <Styled.Title>BACKOFFICE</Styled.Title>
                 <Styled.Subtitle>Todas os usuários</Styled.Subtitle>
@@ -105,7 +104,6 @@ const BackofficeContact = () => {
                         </Link>
                     </Styled.PageButtonsDiv>
             </Styled.Backoffice>
-            <Footer/>
         </div>
     );
 }
