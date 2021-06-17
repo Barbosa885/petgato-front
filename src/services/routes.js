@@ -41,20 +41,20 @@ const Routes = () => {
     return (
         <Router>
             <Switch>
+                <Route exact path='/login' component={LoginPage} />
+                <Route exact path='/cadastro' component={CadastroPage} />
+                <Route exact path='/esqueciSenha' component={EsqueciPage} />
+                <Route exact path='/recuperarSenha' component={RecuperarPage} />
                 <RouteNavbarAndFooter path='/' exact component={Home} />
                 <RouteNavbarAndFooter exact path='/sobre' component={AboutUs} />
                 <RouteNavbarAndFooter exact path='/contato' component={ContactUs} />
                 <RouteNavbarAndFooter exact path='/createpubli' component={CreatePubli} />
-                <Route exact path='/login' component={LoginPage} />
-                <Route exact path='/cadastro' component={CadastroPage} />
-                <Route exact path='/esqueciSenha' component={EsqueciPage} />
                 <RouteNavbarAndFooter exact path='/postagem/:id' component={VisualizacaoPost} />
-                <Route exact path='/recuperarSenha' component={RecuperarPage} />
-                <Route exact path='/meuPerfil' component={Profile} />
-                <Route exact path='/editarUsuario' component={BackofficeEditarUsuario} />
-                <Route exact path='/backofficePost/:id' component={BackofficePost} />
-                <Route exact path='/backofficeUser/:id' component={BackofficeUser} />
-                <Route exact path='/backofficeContact/:id' component={BackofficeContact} />
+                <RouteNavbarAndFooter exact path='/meuPerfil' component={Profile} />
+                <RouteNavbarAndFooter exact path='/editarUsuario' component={BackofficeEditarUsuario} />
+                <RouteNavbarAndFooter exact path='/backofficePost/:id' component={BackofficePost} />
+                <RouteNavbarAndFooter exact path='/backofficeUser/:id' component={BackofficeUser} />
+                <RouteNavbarAndFooter exact path='/backofficeContact/:id' component={BackofficeContact} />
                 <RouteNavbarAndFooter exact path='/editarTag' component={EditarTag} />
             </Switch>
         </Router>
