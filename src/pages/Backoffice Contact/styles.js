@@ -38,9 +38,10 @@ export const Subtable = styled.td`
     font-size: 17px;
     display: inline-block;
     width: 180px;
+    overflow: hidden !important;
 `
 
-export const PostTitle = styled.td`
+export const ContactTitle = styled.td`
     text-align: left;
     padding: 8px;
     font-size: 20px;
@@ -48,6 +49,13 @@ export const PostTitle = styled.td`
     width: 550px;
     overflow: hidden !important;
     text-overflow: ellipsis;
+`
+
+export const ContactDiv= styled.div`
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    width: 550px;
 `
 
 export const EditButton = styled.td`
@@ -58,6 +66,12 @@ export const EditButton = styled.td`
     display: inline-block;
     overflow: hidden !important;
     color: #C882B4;
+`
+
+export const Div = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 `
 
 export const PageButtonsDiv= styled.div`
@@ -78,38 +92,15 @@ export const Button= styled.button`
     }
 `
 
-export const Modal= styled.div`
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-padding-top: 100px; /* Location of the box */
-left: 0;
-top: 0;
-width: 100%; /* Full width */
-height: 100%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-`
-
-export const ModalContent= styled.div`
-background-color: #fefefe;
-margin: auto;
-padding: 20px;
-border: 1px solid #888;
-width: 80%;
-`
-export const Close= styled.span`
-color: #aaaaaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
-}
-
-&:hover,
-&:focus {
-color: #000;
-text-decoration: none;
-cursor: pointer;
-}
+export const Close = styled.div`
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    &:hover,
+    &:focus {
+        color: #BA66A3;
+        text-decoration: none;
+        cursor: pointer;
+    }
 `

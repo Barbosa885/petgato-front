@@ -1,15 +1,23 @@
 import React, {useState, useEffect} from 'react';
 import {Link,useParams} from 'react-router-dom';
 import * as Styled from './styles';
+import LeftArrow from '../../assets/Icon awesome-chevron-left.svg';
 import api from '../../services/api';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Modal from "react-modal";
 
 const BackofficeContact = () => {
     const [contacts, setContacts] = useState([]);
     const token = localStorage.getItem('token');
     const [page, setPage] = useState('1');
+    const [isOpen, setIsOpen] = useState(false);
+
     let {id} = useParams();
+
+    function toggleModal() {
+      setIsOpen(!isOpen);
+    }
 
     useEffect(() => {
     setPage(id)
@@ -53,10 +61,25 @@ const BackofficeContact = () => {
                     <Styled.TableTitle>Data de Envio</Styled.TableTitle>
                 </Styled.Table>
                 {contacts.map(contact =>
-                    <Styled.Table>   
+                    <Styled.Table>
                         <Styled.Subtable>{contact.name}</Styled.Subtable>
-                        <Styled.Subtable>{contact.description}</Styled.Subtable>
                         <Styled.Subtable>{contact.created_at}</Styled.Subtable>
+                        <Styled.ContactTitle onClick={toggleModal}><Styled.ContactDiv>{contact.description}</Styled.ContactDiv></Styled.ContactTitle>
+                            <Modal isOpen={isOpen} onRequestClose={toggleModal} style={{
+                                overlay: {
+                                    top: 90,
+                                    bottom: 50,
+                                },
+                                content: {
+                                    borderRadius: '40px',
+                                    padding: '30px',
+                                }}}>
+                            <Styled.Close onClick={toggleModal}><img src={LeftArrow}/></Styled.Close>
+                                <h1>Mensagem: {contact.name}</h1>
+                                <h3>Email: </h3><p>{contact.email}</p>
+                                <h3>Mensagem:</h3>
+                                <p>{contact.description}</p>                               
+                            </Modal>
                         <Styled.EditButton><strong>Excluir</strong></Styled.EditButton>
                         <Styled.EditButton><strong>Editar</strong></Styled.EditButton>
                     </Styled.Table>)}
