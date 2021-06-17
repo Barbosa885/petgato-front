@@ -19,18 +19,32 @@ import BackofficePost from '../pages/Backoffice Post';
 import BackofficeUser from '../pages/Backoffice User';
 import BackofficeContact from '../pages/Backoffice Contact';
 
+const RouteNavbarAndFooter = ({ component: Component, ...props }) => {
+    return (
+        <Route {...props}>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                minHeight: '100vh',
+            }}
+            >
+                <Navbar />
+                <Component />
+                <Footer />
+            </div>
+        </Route>
+    )
+}
+
 const Routes = () => {
     return (
         <Router>
             <Switch>
-                <Route path='/' exact component={Home} />
-                <Route exact path='/sobre' component={AboutUs}>
-                    <Navbar />
-                    <AboutUs />
-                    <Footer />
-                </Route>
-                <Route exact path='/contato' component={ContactUs} />
-                <Route exact path='/createpubli' component={CreatePubli} />
+                <RouteNavbarAndFooter path='/' exact component={Home} />
+                <RouteNavbarAndFooter exact path='/sobre' component={AboutUs} />
+                <RouteNavbarAndFooter exact path='/contato' component={ContactUs} />
+                <RouteNavbarAndFooter exact path='/createpubli' component={CreatePubli} />
                 <Route exact path='/login' component={LoginPage} />
                 <Route exact path='/cadastro' component={CadastroPage} />
                 <Route exact path='/esqueciSenha' component={EsqueciPage} />

@@ -45,7 +45,6 @@ const Contact = () => {
 
     return (
         <div>
-        <Navbar />
         <Styled.Contact>
             <Styled.Image src={Doguinho} alt="doguinho"/>
             <Styled.Form>
@@ -70,7 +69,6 @@ const Contact = () => {
                 </Styled.FormContainer>
             </Styled.Form>
         </Styled.Contact>
-        <Footer />
         </div>
 );
 }
