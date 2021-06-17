@@ -9,6 +9,8 @@ import {useHistory} from 'react-router-dom';
 
 const EsqueciPage = () => {
     const [email, setEmail] = useState('');
+    const [token, setToken] = useState('');
+    const [password, setPassword] = useState('');
 
     let history = useHistory();
 
@@ -20,13 +22,15 @@ const EsqueciPage = () => {
             return;
         }
 
-        api.post('/login/forgot_password', {
-            email: email
+        api.post('/login/reset_password', {
+            email: email,
+            token: token,
+            password: password
         })
         .then(() => {
-            alert('Confira o código recebido no email');
+            alert('Conta recuperada com sucesso!');
             setEmail('');
-            history.push('/recuperarSenha');
+            history.push('/login');
         })
         .catch(error => {
             console.error(error);
@@ -46,8 +50,8 @@ const EsqueciPage = () => {
                         <Styled.Logo src={ImgLogo} />
                     </a>
                     <InputText value={email} onChange={setEmail}>Email</InputText>
-                    <InputText value={email} onChange={setEmail}>Email</InputText>
-                    <InputText value={email} onChange={setEmail}>Email</InputText>
+                    <InputText value={token} onChange={setToken}>Código</InputText>
+                    <InputText value={password} onChange={setPassword}>Senha</InputText>
                     <ButtonMain onClick={sendMessage} >RECUPERAR A SENHA</ButtonMain>
                     <Styled.LadoaLado>
                             <p> Lembrou a senha? </p>
