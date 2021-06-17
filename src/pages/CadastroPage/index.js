@@ -65,6 +65,10 @@ const CadastroPage = () => {
                         <p> Ainda não tem conta? </p>
                         <a href='/cadastro' > Crie sua conta </a>
                     </Styled.LadoaLado>
+                    <Styled.LadoaLado>
+                            <p> Esqueceu a senha? </p>
+                            <a href='/esqueciSenha' > Recupere a sua conta </a>
+                    </Styled.LadoaLado>
                 </Styled.FormCadastro>
                 
             </Styled.Cadastro>
