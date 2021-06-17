@@ -38,7 +38,6 @@ export const Subtable = styled.td`
     font-size: 17px;
     display: inline-block;
     width: 180px;
-    overflow: hidden !important;
 `
 
 export const PostTitle = styled.td`
@@ -61,15 +60,9 @@ export const EditButton = styled.td`
     color: #C882B4;
 `
 
-export const Div = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-`
-
 export const PageButtonsDiv= styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 30px;
 `
 
@@ -83,11 +76,4 @@ export const Button= styled.button`
     &:hover {
       background: #BA66A3;
     }
-`
-
-export const PostDiv= styled.div`
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    width: 550px;
 `
