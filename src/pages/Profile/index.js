@@ -13,7 +13,6 @@ import WhiteInputText from '../../components/WhiteInputText';
 function Profile() {
     return (
     <>
-    <Navbar />
     <styled.Background>
         <styled.PictureContainer>
             <img src={Cintia} class='Foto' />
@@ -37,7 +36,6 @@ function Profile() {
         </styled.ButtonContainer>  
       </styled.Form>
     </styled.Background>
-    <Footer />
     </>
     )
 }

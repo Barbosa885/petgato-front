@@ -33,11 +33,6 @@ export const Form = styled.div`
   flex-direction: column;
   width: 100%;
 
-  Input{
-  &[disabled]{
-    background-color: #e3e3e3;
-  }
-  }
 `
 
 export const ButtonContainer = styled.div`

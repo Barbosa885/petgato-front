@@ -4,8 +4,7 @@ import { Titulo } from "./styles";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+
 import InputText from "../../components/InputText";
 import InputFile from "../../components/InputFile";
 import ButtonMain from "../../components/Button";
@@ -62,7 +61,6 @@ const CreatePubli = () => {
 
     return (
         <Styled.Pagina>
-        <Navbar />
         <Styled.Conteudo>
             <Styled.EstiloPar2> BACKOFFICE</Styled.EstiloPar2>
             <Styled.EstiloPar1> Criar Publicação</Styled.EstiloPar1>
@@ -94,7 +92,6 @@ const CreatePubli = () => {
             {/* <input type='file' onChange={(e) => setBannerImage(e.target.files[0])} /> */}
             <ButtonMain onClick={submitForm}> Publicar </ButtonMain>
         </Styled.Conteudo>
-        <Footer />
         </Styled.Pagina>
     );
 };
