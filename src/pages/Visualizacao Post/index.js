@@ -43,7 +43,6 @@ const VisualizacaoPost = () => {
 
     return (
         <div>
-            <Navbar />
             <Styled.Page>
                 <Styled.BackButton onClick={redirect}>
                     <img src={LeftArrow}/>
@@ -56,7 +55,6 @@ const VisualizacaoPost = () => {
                     
                 </Styled.Body>
             </Styled.Page>
-            <Footer />
         </div>
     );
 }

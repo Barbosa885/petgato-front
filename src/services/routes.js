@@ -14,7 +14,7 @@ import VisualizacaoPost from '../pages/Visualizacao Post';
 import RecuperarPage from '../pages/RecuperarPage';
 import Profile from '../pages/Profile';
 import BackofficeEditarUsuario from '../pages/Backoffice/EditarPerfil'
-
+import EditarTag from '../pages/Backoffice/EditarTag'
 import BackofficePost from '../pages/Backoffice Post';
 
 const RouteNavbarAndFooter = ({ component: Component, ...props }) => {
@@ -47,10 +47,11 @@ const Routes = () => {
                 <Route exact path='/cadastro' component={CadastroPage} />
                 <Route exact path='/esqueciSenha' component={EsqueciPage} />
                 <RouteNavbarAndFooter exact path='/postagem/:id' component={VisualizacaoPost} />
-                <RouteNavbarAndFooter exact path='/recuperarSenha' component={RecuperarPage} />
+                <Route exact path='/recuperarSenha' component={RecuperarPage} />
                 <RouteNavbarAndFooter exact path='/meuPerfil' component={Profile} />
                 <RouteNavbarAndFooter exact path='/editarUsuario' component={BackofficeEditarUsuario} />
                 <RouteNavbarAndFooter exact path='/backofficePost/:id' component={BackofficePost} />
+                <RouteNavbarAndFooter exact path='/editarTag' component={EditarTag} />
             </Switch>
         </Router>
     );
