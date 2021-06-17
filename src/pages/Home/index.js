@@ -5,20 +5,21 @@ import TwitterIcon from './Twitter.svg';
 import FaceIcon from './Facebook.svg';
 import InstaIcon from './Instagram.svg';
 import SearchIcon from './SearchIcon.svg';
-import Cintia from './Cintia.jpg'
+import Cintia from './Cintia.jpg';
 
-import InputText from '../../components/WhiteInputText'
+import InputText from '../../components/WhiteInputText';
 
 function Home() {
     return (
         <styled.Background>
+            <hr />
             <styled.LeftBox>
                 <styled.SearchContainer>
                     <InputText />
-                    <img src={SearchIcon} class='Botao'/>
+                    <img src={SearchIcon} class='Botao' />
                 </styled.SearchContainer>
                     <styled.PhotoContainer>
-                        <img src={Cintia} class='Foto'/>
+                        <img src={Cintia} class='Foto' />
                         <styled.TextoContainer>
                             <styled.Title> SOBRE A AUTORA </styled.Title>
                             <styled.Subtitle> Cíntia Lorenzzo </styled.Subtitle>
@@ -33,9 +34,9 @@ function Home() {
                             </styled.Texto>
                         </styled.TextoContainer>
                     <styled.RedesContainers>
-                        <img src={TwitterIcon} class='Twitter'/>
-                        <img src={FaceIcon} class='Facebook'/>
-                        <img src={InstaIcon} class='Instagram'/>
+                        <img src={TwitterIcon} class='Twitter' /> 
+                        <img src={FaceIcon} class='Facebook' />
+                        <img src={InstaIcon} class='Instagram' />
                     </styled.RedesContainers>
                 </styled.PhotoContainer>
             </styled.LeftBox>

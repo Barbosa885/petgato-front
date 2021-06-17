@@ -90,15 +90,17 @@ export const RedesContainers = styled.div`
 
 export const SearchContainer = styled.div`
   display: flex;
-  width: 65%;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin-bottom: 40px;
 
   img.Botao {
     width: 25px;
     height: 25px;
     margin-left: -2rem;
+    margin-top: 1rem;
     z-index: 1;
   }
 `

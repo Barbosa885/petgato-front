@@ -3,8 +3,6 @@ import {Link,useParams} from 'react-router-dom';
 import * as Styled from './styles';
 import LeftArrow from '../../assets/Icon awesome-chevron-left.svg';
 import api from '../../services/api';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import Modal from "react-modal";
 
 const BackofficeContact = () => {
@@ -12,6 +10,7 @@ const BackofficeContact = () => {
     const token = localStorage.getItem('token');
     const [page, setPage] = useState('1');
     const [isOpen, setIsOpen] = useState(false);
+    const [key, setKey] = useState(true);
 
     let {id} = useParams();
 
@@ -33,7 +32,22 @@ const BackofficeContact = () => {
         console.error(error);
         alert('Ocorreu um erro! Tente novamente.');
     });
-    },[id])
+    },[id,key])
+
+    const handleDelete = (id,token,key) => {
+        api.delete(`contacts/${id}`, {
+            headers:{
+                'Authorization': `${token}`,
+            }
+        })
+        .then(() => {
+            setKey(!key);
+        })
+        .catch(error => {
+            console.error(error);
+            alert('Ocorreu um erro! Tente novamente.');
+        });      
+    }
   
     const handlePreviousPage = (id) => {
       if (id === "1") {
@@ -63,7 +77,8 @@ const BackofficeContact = () => {
                     <Styled.Table>
                         <Styled.Subtable>{contact.name}</Styled.Subtable>
                         <Styled.Subtable>{contact.created_at}</Styled.Subtable>
-                        <Styled.ContactTitle onClick={toggleModal}><Styled.ContactDiv>{contact.description}</Styled.ContactDiv></Styled.ContactTitle>
+                        <Styled.ContactTitle><Styled.ContactDiv>{contact.description}</Styled.ContactDiv></Styled.ContactTitle>
+                        <Styled.EditButton onClick={toggleModal}><strong>Exibir</strong></Styled.EditButton>
                             <Modal isOpen={isOpen} onRequestClose={toggleModal} style={{
                                 overlay: {
                                     top: 90,
@@ -73,14 +88,13 @@ const BackofficeContact = () => {
                                     borderRadius: '40px',
                                     padding: '30px',
                                 }}}>
-                            <Styled.Close onClick={toggleModal}><img src={LeftArrow}/></Styled.Close>
+                                <Styled.Close onClick={toggleModal}><img src={LeftArrow}/></Styled.Close>
                                 <h1>Mensagem: {contact.name}</h1>
                                 <h3>Email: </h3><p>{contact.email}</p>
                                 <h3>Mensagem:</h3>
                                 <p>{contact.description}</p>                               
                             </Modal>
-                        <Styled.EditButton><strong>Excluir</strong></Styled.EditButton>
-                        <Styled.EditButton><strong>Editar</strong></Styled.EditButton>
+                        <Styled.EditButton onClick = {() => handleDelete(contact.id,token,key)}><strong>Excluir</strong></Styled.EditButton>
                     </Styled.Table>)}
                     <Styled.PageButtonsDiv>
                         <Link to={`/backofficeContact/${handlePreviousPage(id)}`}>
