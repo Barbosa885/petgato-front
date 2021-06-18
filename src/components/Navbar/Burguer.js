@@ -40,7 +40,7 @@ const StyledBurguer = styled.div`
     }
 `
 
-const Burguer = () => {
+const Burguer = ({backoffice}) => {
     const [open, setOpen] = useState(false)
     return (
         <>
@@ -49,7 +49,7 @@ const Burguer = () => {
                 <div />
                 <div />
             </StyledBurguer>
-            <Rightnav open={open}/>
+            <Rightnav backoffice={backoffice} open={open}/>
         </>
     )
 }

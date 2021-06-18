@@ -50,15 +50,15 @@ const Routes = () => {
                 <RouteNavbarAndFooter path='/' exact component={Home} />
                 <RouteNavbarAndFooter exact path='/sobre' component={AboutUs} />
                 <RouteNavbarAndFooter exact path='/contato' component={ContactUs} />
-                <RouteNavbarAndFooter exact path='/createpubli' component={CreatePubli} />
+                <RouteNavbarAndFooter backoffice exact path='/createpubli' component={CreatePubli} />
                 <RouteNavbarAndFooter exact path='/postagem/:id' component={VisualizacaoPost} />
                 <RouteNavbarAndFooter exact path='/meuPerfil' component={Profile} />
-                <RouteNavbarAndFooter backoffice={true} exact path='/editarUsuario' component={BackofficeEditarUsuario} />
-                <RouteNavbarAndFooter exact path='/backofficePost/:id' component={BackofficePost} />
-                <RouteNavbarAndFooter exact path='/backofficeUser/:id' component={BackofficeUser} />
-                <RouteNavbarAndFooter exact path='/backofficeContact/:id' component={BackofficeContact} />
-                <RouteNavbarAndFooter exact path='/editarTag' component={EditarTag} />
-                <RouteNavbarAndFooter exact path='/editarPubli/:id' component={EditPublication} />
+                <RouteNavbarAndFooter backoffice exact path='/editarUsuario' component={BackofficeEditarUsuario} />
+                <RouteNavbarAndFooter backoffice exact path='/backofficePost/:id' component={BackofficePost} />
+                <RouteNavbarAndFooter backoffice exact path='/backofficeUser/:id' component={BackofficeUser} />
+                <RouteNavbarAndFooter backoffice exact path='/backofficeContact/:id' component={BackofficeContact} />
+                <RouteNavbarAndFooter backoffice exact path='/editarTag' component={EditarTag} />
+                <RouteNavbarAndFooter backoffice exact path='/editarPubli/:id' component={EditPublication} />
             </Switch>
         </Router>
     );

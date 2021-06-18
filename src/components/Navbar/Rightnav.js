@@ -46,4 +46,4 @@ function Rightnav({ open, backoffice }) {
     )
 }
 
-export default Rightnav
+export default Rightnav;
