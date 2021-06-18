@@ -18,6 +18,7 @@ import EditarTag from '../pages/Backoffice/EditarTag'
 import BackofficePost from '../pages/Backoffice Post';
 import BackofficeUser from '../pages/Backoffice User';
 import BackofficeContact from '../pages/Backoffice Contact';
+import EditPublication from '../pages/EditPubli';
 
 const RouteNavbarAndFooter = ({ component: Component, ...props }) => {
     return (
@@ -56,6 +57,7 @@ const Routes = () => {
                 <RouteNavbarAndFooter exact path='/backofficeUser/:id' component={BackofficeUser} />
                 <RouteNavbarAndFooter exact path='/backofficeContact/:id' component={BackofficeContact} />
                 <RouteNavbarAndFooter exact path='/editarTag' component={EditarTag} />
+                <RouteNavbarAndFooter exact path='/editarPubli/:id' component={EditPublication} />
             </Switch>
         </Router>
     );
