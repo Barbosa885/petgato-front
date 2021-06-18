@@ -35,4 +35,6 @@ export const Banner = styled.img`
 export const Body = styled.div`
   font-family: 'Montserrat',sans-serif;
   font-size: 25px;
+  overflow: hidden;
+  word-wrap: break-word;
 `
