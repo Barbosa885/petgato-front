@@ -60,7 +60,7 @@ const EditPublication = () => {
             }
         })
         .then((response) => {
-            alert('Post criado com sucesso');
+            alert('Post editado com sucesso');
             // limpa os campos preenchidos
         })
         .catch(error => {

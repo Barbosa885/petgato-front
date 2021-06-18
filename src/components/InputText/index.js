@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Styled from './styles.js';
 
-const InputText = ({children, value, onChange, ...props}) => {
+const InputText = ({children, value, onChange, password=false, ...props}) => {
     // Logica para arrumar o Input text com JS puro, mas 
     // que não funciona com o React ( e não achei outra solução)
     // arrumei o problema com CSS puro mesmo;
@@ -19,7 +19,7 @@ const InputText = ({children, value, onChange, ...props}) => {
 
     return (
         <Styled.InputdeTexto>
-            <input value={value} onChange={e => onChange(e.target.value)} type='text' required {...props}/>
+            <input password={password} value={value} onChange={e => onChange(e.target.value)} type={password ? 'password' : 'text'} required {...props}/>
             <span>{children}</span>
         </Styled.InputdeTexto>
     );

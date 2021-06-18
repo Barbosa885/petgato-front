@@ -87,7 +87,6 @@ const Content = styled.div`
   max-height: 100px;
   overflow: hidden;
   word-wrap: break-word;
-  
 `
 
 const PostPreview = ({ post }) => {

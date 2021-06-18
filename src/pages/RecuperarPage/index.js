@@ -51,7 +51,7 @@ const EsqueciPage = () => {
                     </a>
                     <InputText value={email} onChange={setEmail}>Email</InputText>
                     <InputText value={token} onChange={setToken}>Código</InputText>
-                    <InputText value={password} onChange={setPassword}>Senha</InputText>
+                    <InputText password value={password} onChange={setPassword}>Senha</InputText>
                     <ButtonMain onClick={sendMessage} >RECUPERAR A SENHA</ButtonMain>
                     <Styled.LadoaLado>
                             <p> Lembrou a senha? </p>

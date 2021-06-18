@@ -41,7 +41,7 @@ const LoginPage = () => {
             name: nome,
             email: email,
             password: senha,
-            password_confirmation: confirmSenha
+            password_confirmation: confirmSenha,
         })
         .then(() => {
             alert('Cadastro efetuado com sucesso');
@@ -72,8 +72,8 @@ const LoginPage = () => {
                     </a>
                     <InputText value={nome} onChange={setNome}>Nome</InputText>
                     <InputText value={email} onChange={setEmail}>Email</InputText>
-                    <InputText value={senha} onChange={setSenha}>Senha</InputText>
-                    <InputText value={confirmSenha} onChange={setConfirmSenha}>Confirme sua senha</InputText>
+                    <InputText password value={senha} onChange={setSenha}>Senha</InputText>
+                    <InputText password value={confirmSenha} onChange={setConfirmSenha}>Confirme sua senha</InputText>
                     <ButtonMain onClick={sendMessage} >CADASTRAR</ButtonMain>
                     <Styled.LadoaLado>
                             <p> Já possui conta? </p>

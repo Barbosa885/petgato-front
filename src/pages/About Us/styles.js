@@ -39,7 +39,8 @@ export const ImageBottom = styled.img`
 
 export const Title = styled.span`
   font-family: 'Montserrat',sans-serif;
-  font-size: 22px
+  font-size: 22px;
+  color: #707070;
 `
 
 export const Subtitle = styled.h1`

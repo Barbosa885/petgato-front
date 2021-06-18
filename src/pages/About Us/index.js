@@ -6,9 +6,6 @@ import Facebook from '../../assets/Facebook.svg';
 import Instagram from '../../assets/Instagram.svg';
 import Twitter from '../../assets/Twitter.svg';
 
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-
 import * as Styled from './styles'
 
 const AboutUs = () => {
@@ -30,9 +27,15 @@ return (
             <Styled.Paragraph>Meu nome é Cíntia Lorenzzo e sou veterinária há 5 anos, apaixonada pelo mundo animal, principalmente os que estão sempre presentes no nosso dia a dia. Além de escrever, gosto de correr no Parque do Ibiapuera com o Floquinho e cantar com a Mands, uma berradora nata.</Styled.Paragraph>
             <Styled.Paragraph>Quer conhecer mais sobre mim? Me siga nas minhas redes sociais:</Styled.Paragraph>
             <Styled.SocialMedia>
-                <Styled.Icon src={Facebook} alt="Facebook"/>
-                <Styled.Icon src={Instagram} alt="Instagram"/>
-                <Styled.Icon src={Twitter} alt="Twitter"/>
+            <a href='https://www.facebook.com' target="_blank">
+                <Styled.Icon src={Facebook} alt='Facebook' />
+            </a>
+            <a href='https://www.instagram.com' target="_blank">
+                <Styled.Icon src={Instagram} alt='Instagram'/>
+            </a>
+            <a href='https://twitter.com' target="_blank">
+                <Styled.Icon src={Twitter} alt='Twitter'/>
+            </a>
             </Styled.SocialMedia>
         </Styled.Text>
     </Styled.AboutUs>

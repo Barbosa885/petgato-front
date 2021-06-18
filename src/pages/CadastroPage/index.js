@@ -59,11 +59,8 @@ const CadastroPage = () => {
                         <Styled.Logo src={ImgLogo} />
                     </a>
                     <InputText value={email} onChange={setEmail}>Email</InputText>
-                    <InputText value={senha} onChange={setSenha}>Senha</InputText>
+                    <InputText password value={senha} onChange={setSenha}>Senha</InputText>
                     <ButtonMain onClick={sendMessage}>ENTRAR</ButtonMain>
-                    <Styled.LadoaLado>
-                        <a href='/cadastro' > Esqueci a minha Senha </a>
-                    </Styled.LadoaLado>
                     <Styled.LadoaLado>
                         <p> Ainda não tem conta? </p>
                         <a href='/cadastro' > Crie sua conta </a>
