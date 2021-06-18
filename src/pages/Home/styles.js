@@ -1,25 +1,29 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Background = styled.div`
-  display: flex;
-  margin: 50px auto 50px 50px;
-  padding: 0;
-`
+  display: grid;
+  grid-template-columns: 300px auto;
+  min-height: calc(100vh - 90px - 40px);
+`;
+
 export const LeftBox = styled.div`
   display: flex;
+  align-items: center;
   width: 100%;
   height: 400px;
   flex-direction: column;
-`
+  border-right: solid 1px lightgray;
+  height: 90%;
+  margin: 10% 0;
+`;
 
 export const PhotoContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 250px;
   align-items: center;
-  background-color: #FBE9F6;
-    
-  img.Foto{
+  background-color: #fbe9f6;
+  img.Foto {
     position: relative;
     margin-top: -2rem;
     object-fit: cover;
@@ -27,12 +31,11 @@ export const PhotoContainer = styled.div`
     width: 150px;
     height: 150px;
   }
-
-` 
+`;
 
 export const TextoContainer = styled.div`
   display: flex;
-  font-family: 'MontSerrat', sans-serif;
+  font-family: "MontSerrat", sans-serif;
   width: 80%;
   text-align: center;
   margin: 0;
@@ -40,45 +43,47 @@ export const TextoContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1em;
-`
+`;
 
 export const Title = styled.a`
-  font-family: 'MontSerrat', sans-serif;
+  font-family: "MontSerrat", sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
-`
+  color: #707070;
+`;
 
 export const Subtitle = styled.a`
-  font-family: 'MontSerrat', sans-serif;
+  font-family: "MontSerrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #C882B4;
-`
+  color: #c882b4;
+`;
 
 export const Texto = styled.a`
-  font-family: 'MontSerrat', sans-serif;
+  font-family: "MontSerrat", sans-serif;
   font-weight: 350;
   font-size: 0.87rem;
   margin-top: 0.6rem;
-`
+  color: #707070;
+`;
 
 export const RedesContainers = styled.div`
   display: flex;
   width: 40%;
   height: 25px;
-  margin-top: 15px;
+  margin-top: 10px;
   justify-content: space-between;
-  
+
   img.Twitter {
     cursor: pointer;
     border-style: solid;
-    border-color: #FFFF;
+    border-color: #ffff;
   }
 
   img.Facebook {
     cursor: pointer;
     border-style: solid;
-    border-color: #FFFF;
+    border-color: #ffff;
   }
 
   img.Instagram {
@@ -86,7 +91,7 @@ export const RedesContainers = styled.div`
     border-style: solid;
     border-color: #ffffff;
   }
-`
+`;
 
 export const SearchContainer = styled.div`
   display: flex;
@@ -103,5 +108,28 @@ export const SearchContainer = styled.div`
     margin-top: 1rem;
     z-index: 1;
   }
-`
+`;
 
+export const RightBox = styled.div`
+  width: calc(100% - 50px);
+  padding: 5% 25px;
+  font-family: MontSerrat;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #c882b4;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 8px 0;
+    font-weight: 300;
+    font-size: 20px;
+    color: #707070;
+  }
+`;

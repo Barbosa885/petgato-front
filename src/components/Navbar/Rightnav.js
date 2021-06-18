@@ -5,6 +5,9 @@ const Ul = styled.ul`
     list-style: none;
     display: flex;
     flex-flow: row wrap;
+    li{
+        cursor: pointer;
+    }
 @media (max-width: 768px) {
     position: sticky;
     flex-flow: column nowrap;
@@ -26,7 +29,9 @@ function Rightnav({ open }) {
         <li><a href='/'>Página Inicial</a></li>
         <li><a href='/sobre'>Sobre Nós</a></li>
         <li><a href='/contato'>Fale Conosco</a></li>
-        <li><a href='/login'>{localStorage.getItem('token') ? 'Minha Conta' : 'Entrar'}</a></li>
+        <li><a href={localStorage.getItem('token') ? '/meuPerfil' : '/login'}>{localStorage.getItem('token') ? 'Minha Conta' : 'Entrar'}</a></li>
+        {localStorage.getItem('token') && <li><a onClick={() => {localStorage.removeItem('token');
+        window.location.reload(false)}}> Sair </a></li>}
     </Ul>
     )
 }
