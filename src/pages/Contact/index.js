@@ -4,8 +4,6 @@ import Input from '../../components/Contact Input';
 import Button from '../../components/WhiteButton';
 import Doguinho from './Doguinho.jpg';
 
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 
 import * as Styled from './styles'
 import api from '../../services/api';

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 export const Search = styled.textarea`
   width: 30vw;
   height: 7vh;

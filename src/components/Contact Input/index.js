@@ -3,12 +3,12 @@ import * as Styled from './styles.js';
 
 const Input = ({ children, onChange=null, value='' }) => {
     return (
-        <Styled.Input 
+        <Styled.Search 
             value={value}
             onChange={e => onChange(e.target.value)}
         >
             {children}
-        </Styled.Input>
+        </Styled.Search>
     );
 }
 

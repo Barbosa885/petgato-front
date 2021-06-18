@@ -22,6 +22,11 @@ export const WhiteButton = styled.button`
     font-size: 16px;
     font-family: 'MontSerrat', sans-serif;
     border: 3px solid var(--rosa-media);
+    a{ 
+        text-decoration: none;
+        color: var(--cinza-escuro);  
+    }
+    
 
     &::before{
         content: '';

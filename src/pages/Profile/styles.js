@@ -88,5 +88,9 @@ export const InputContainer = styled.div`
   Input{
       margin: 0;
       width: 100%;
+      &[disabled] {
+        cursor: not-allowed;
+        background-color: rgb(0, 0, 0, 0.10);
+      }
   }
 `

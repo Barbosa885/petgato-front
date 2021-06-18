@@ -14,6 +14,12 @@ export const InputContainer = styled.div`
     ". ."
     ". .";
   margin-top: 30px; 
+  
+  Input { 
+    &[disabled] {
+      background-color: #ededed;
+    }
+  }
 `
 
 export const Title = styled.span`

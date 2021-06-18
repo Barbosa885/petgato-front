@@ -87,7 +87,7 @@ const CreatePubli = () => {
             }}
             />
             
-            <InputFile onChange={handleOnImage}>Enviar</InputFile>
+            <InputFile onChange={handleOnImage}> Enviar </InputFile>
             {/* <InputFile value={image} onChange={(e) => setBannerImage(e.target.files[0])}>Enviar</InputFile> */}
             {/* <input type='file' onChange={(e) => setBannerImage(e.target.files[0])} /> */}
             <ButtonMain onClick={submitForm}> Publicar </ButtonMain>
