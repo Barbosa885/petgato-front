@@ -21,6 +21,7 @@ import BackofficeContact from '../pages/Backoffice Contact';
 import EditPublication from '../pages/EditPubli';
 
 const RouteNavbarAndFooter = ({ component: Component, ...props }) => {
+    console.log(props)
     return (
         <Route {...props}>
             <div style={{
@@ -30,7 +31,7 @@ const RouteNavbarAndFooter = ({ component: Component, ...props }) => {
                 minHeight: '100vh',
             }}
             >
-                <Navbar />
+                <Navbar backoffice={props.backoffice}/>
                 <Component />
                 <Footer />
             </div>
@@ -52,7 +53,7 @@ const Routes = () => {
                 <RouteNavbarAndFooter exact path='/createpubli' component={CreatePubli} />
                 <RouteNavbarAndFooter exact path='/postagem/:id' component={VisualizacaoPost} />
                 <RouteNavbarAndFooter exact path='/meuPerfil' component={Profile} />
-                <RouteNavbarAndFooter exact path='/editarUsuario' component={BackofficeEditarUsuario} />
+                <RouteNavbarAndFooter backoffice={true} exact path='/editarUsuario' component={BackofficeEditarUsuario} />
                 <RouteNavbarAndFooter exact path='/backofficePost/:id' component={BackofficePost} />
                 <RouteNavbarAndFooter exact path='/backofficeUser/:id' component={BackofficeUser} />
                 <RouteNavbarAndFooter exact path='/backofficeContact/:id' component={BackofficeContact} />

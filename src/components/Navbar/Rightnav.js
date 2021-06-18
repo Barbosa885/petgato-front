@@ -23,7 +23,17 @@ const Ul = styled.ul`
 }
 `
 
-function Rightnav({ open }) {
+function Rightnav({ open, backoffice }) {
+    if(backoffice) return(
+    <Ul  open={open}>
+        <li><a href='/'>Página Inicial</a></li>
+        <li><a href='/createpubli'>Publicações</a></li>
+        <li><a href='/backofficeUser/1'>Usuários</a></li>
+        <li><a href='/backofficeContact/1'>Mensagens</a></li>
+        {localStorage.getItem('token') && <li><a onClick={() => {localStorage.removeItem('token');
+        window.location.reload(false)}}> Sair </a></li>}
+    </Ul>
+    )
     return (
     <Ul  open={open}>
         <li><a href='/'>Página Inicial</a></li>
