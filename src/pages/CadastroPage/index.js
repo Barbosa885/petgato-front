@@ -35,6 +35,7 @@ const CadastroPage = () => {
             const token = response.data.token;
             console.log(token);
             localStorage.setItem('token', token);
+            localStorage.setItem('id', response.data.id);
             // limpa os campos preenchidos
             setEmail('');
             setSenha('');
