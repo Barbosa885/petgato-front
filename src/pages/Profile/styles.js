@@ -30,7 +30,25 @@ justify-content: space-around;
         align-items: center;
         margin: auto;
         margin-top: 5px;
+
+        input{
+          display: none;
+        }
         
+        label {
+          cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          margin: auto;
+          margin-top: 5px;
+          font-family: 'Montserrat',sans-serif;
+          color: #C882B4;
+          font-weight: 500;
+          
+        }
+
         a{
             font-family: 'Montserrat',sans-serif;
             color: #C882B4;
@@ -42,6 +60,9 @@ justify-content: space-around;
         img.Botao{
             width: 20px;
             height: 20px;
+            margin: 0;
+            padding: 0;
+            margin-right: 10px;
         }
 
     }
@@ -94,3 +115,4 @@ export const InputContainer = styled.div`
       }
   }
 `
+
